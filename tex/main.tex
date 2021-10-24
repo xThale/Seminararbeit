@@ -1,0 +1,100 @@
+\documentclass[conference]{IEEEtran}
+
+%imports
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage[ngerman]{babel}
+
+\usepackage{csquotes}
+\usepackage[
+  backend=biber,		% Sortier-Compiler
+  style=numeric-comp,	% Zitationsstil
+  ]{biblatex}
+
+\addbibresource{ref.bib}
+\nocite{*} %Print all references
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+
+
+\begin{document}
+
+% <-- title
+
+\title{Prinzipien und Anwendung des Software Designs anhand von Schichten- und Hexagonaler-Architektur}
+
+\author{
+\IEEEauthorblockN{Simon Thalmaier}
+\IEEEauthorblockA{\textit{Technische Hochschule Ingolstadt} \\
+\textit{Informatik} \\
+\textit{Matrikelnummer: 00108692}}
+}
+
+\maketitle
+
+% title -->
+
+\begin{abstract}
+---TODO
+\end{abstract}
+
+\begin{IEEEkeywords}
+architecture, ports and adapters, layer, software
+\end{IEEEkeywords}
+
+
+
+\section{Einleitung}
+Seit Jahrzehnten haben sich Softwaresysteme und ihre Architektur weiterentwickelt. Von den damals weitverbreiteten monolithischen Anwendungen sehen wir aktuell einen Aufschwung an kleinen, modulierten Microservices. Immer mehr Geräte haben eingebaute Software und die Größe bzw. Komplexität von Sourcecode steigt mit jedem Jahr, dadurch auch die verbundenen Entwicklungskosten. Immer mehr wandert der Fokus bei  Softwareentwicklung auf Flexibilität, Übersichtlichkeit und Wartbarkeit. Es haben sich daraus verschiedenste Software Architekturen bewährt. \\
+Im Folgenden wird auf bekannte Design-Prinzipien und zwei konkrete Architekturen eingegangen und analysiert.
+
+
+
+\section{Prinzipien des Software Designs}
+
+Prinzipien eines 'guten' Software Designs unterscheiden sich je nach Programmierparadigmen und unterliegender Architektur. Hierbei wird auf die Bekanntesten eingegangen.
+
+\subsection{Die SOLID Prinzipien}
+
+Das Akronym, welches von Michael Feathers und Robert C. Martin geprägt wurde, zählt zu dem Fundament eines stabilen Designs. Es beschreibt wünschenswerte Eigenschaften von Komponenten und ihre Beziehungen zueinander. Eine Softwarearchitektur sollte somit den Entwickler dabei unterstützen, diese Prinzipien anzuwenden. 
+
+\subsubsection{Single-Responsibility-Prinzip} Durch diese Richtlinie soll sichergestellt werden, dass die Verantwortlichkeit eines Moduls zu maximal einem Akteur gehört. Konkret darf jedes Modul nur einmal abgeändert werden müssen, unabhängig davon wie viele Anforderungen sich ändern. Bei Verletzung kann eine Anpassung des Codes zu unerwarteten Nebenwirkungen führen. Als Beispiel kann eine Funktion gesehen werden, welche überprüft, ob ein Passwort alle Anforderungen erfüllt. Diese Funktion wird für sowohl Adminaccounts als auch für normale Benutzeraccounts verwendet. Eine neue Anforderung sieht vor, dass Adminaccounts zukünftig eine höhere Mindestlänge besitzt. Eine unaufmerksame Änderung der Funktion hat somit auch eine Auswirkung auf Benutzeraccounts. Dies ist ein Widerspruch des Single-Responsibility-Prinzips. Eine allgemeinere Variante besagt, dass jede Variable, Methode, Klasse usw. genau eine Aufgabe besitzt.
+
+\subsubsection{Open-Closed-Prinzip} Hierdurch werden zwei gewünschte Aspekte eines Moduls beschrieben. Einerseits sollte ein Modul offen sein für Erweiterungen, andererseits geschlossen gegenüber Veränderung. Dies soll es Entwicklern ermöglichen bereits bestehende Funktionalitäten auszubauen ohne dass der Code, welcher auf diese Funktion basiert, abändern zu müssen. Eine Möglichkeit dieses Prinzip anzuwenden ist die Verwendung eines Interfaces, um Module mit unterschiedlichen Implementierungen  
+
+\section{Schichtenarchitektur}
+
+
+%TODO: Erkärung Schichtenarchitektur
+%TODO: Crude
+
+\subsection{SOLID-Prinzipien in der Schichtenarchitektur}
+
+Durch die horizontale Einteilung der Software in Schichten wird eine grobe, natürliche Trennung von Funktionalitäten erzwungen. Somit wird verhindert, dass eine Komponente beispielsweise gleichzeitig Businesslogik und Zugriff auf die Datenbank regelt. Jedoch ist eine vertikale Trennung nicht gegeben und Module können weiterhin verschieden Aufgaben erfüllen, wodurch das \emph{Single-Responsibility-Prinzip} nicht eingehalten ist, ohne die Schichteneinteilung zu verletzten. \\
+
+Die klare Aufteilung unterstützt den Entwickler abstrakte Schnittstellen zwischen den Schichten zu definieren. Diese Abstraktionen sollten laut dem \emph{Open-Closed-Prinzip} als geschlossen und die konkrete Implementierung der Schichtenfunktion als offen behandelt werden. Weiterhin besagt das \emph{Interface-Segregation-Prinzip}, dass diese Schnittstellen so präzise und klein wie möglich gehalten werden sollen. Bei korrekter Anwendung des Prinzips müssen bei steigender Softwarekomplexität weitere Interfaces beziehungsweise Schichten definiert, wodurch die Übersichtlichkeit des Quelltextes gemindert wird. \\
+
+Das \emph{Liskovsches Substitutionsprinzip} ist von der unterliegenden Architektur unabhängig und bezieht sich auf die Komposition von Klassen und ihre Relationen zueinander. Dadurch beeinflusst eine Schichtenarchitektur diese Richtlinie nicht. \\
+
+
+%This is where we run into problems with the layered architecture. Since the data access layer is at the base of everything, it implies that it should own the data access interface. However, since the data access layer holds the details of data access, it shouldn’t actually own the interface. And if we’re following true DIP and IOC, we would end up with more of an onion or hexagontal architecture.
+
+
+
+
+\subsection{Andere Entwicklungsfaktoren}
+
+
+\section{Hexagonale Architektur}
+
+\section{Vergleich der Architekturstile}
+ 
+
+\printbibliography
+
+\end{document}
