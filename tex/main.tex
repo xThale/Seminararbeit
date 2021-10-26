@@ -26,7 +26,7 @@
 
 % <-- title
 
-\title{Prinzipien und Anwendung des Software Designs anhand von Schichten- und Hexagonaler-Architektur}
+\title{Prinzipien und Anwendung des Software Designs anhand von Schichten- und Hexagonaler Architektur}
 
 \author{
 \IEEEauthorblockN{Simon Thalmaier}
@@ -57,29 +57,53 @@ Im Folgenden wird auf bekannte Design-Prinzipien und zwei konkrete Architekturen
 
 \section{Prinzipien des Software Designs}
 
-Prinzipien eines 'guten' Software Designs unterscheiden sich je nach Programmierparadigmen und unterliegender Architektur. Hierbei wird auf die Bekanntesten eingegangen.
+Prinzipien eines 'guten' Software Designs unterscheiden sich je nach Programmierparadigmen und unterliegender Architektur. Hierbei spielen verschieden Faktoren eine Rolle und es wurden über die Jahre einige Richtlinien definiert, welche einen Entwickler behilflich sein sollen eine solche 'gute' Software zu erstellen.
 
-\subsection{Die SOLID Prinzipien}
 
-Das Akronym, welches von Michael Feathers und Robert C. Martin geprägt wurde, zählt zu dem Fundament eines stabilen Designs. Es beschreibt wünschenswerte Eigenschaften von Komponenten und ihre Beziehungen zueinander. Eine Softwarearchitektur sollte somit den Entwickler dabei unterstützen, diese Prinzipien anzuwenden. 
+
+\subsection{Das SOLID-Akronym}
+
+Von Michael Feathers und Robert C. Martin geprägt, zählen die SOLID Prinzipien zu dem Fundament eines stabilen Designs. Es beschreibt wünschenswerte Eigenschaften von Komponenten und ihre Beziehungen zueinander. Eine Softwarearchitektur sollte somit den Entwickler dabei unterstützen, diese Prinzipien anzuwenden. 
 
 \subsubsection{Single-Responsibility-Prinzip} Durch diese Richtlinie soll sichergestellt werden, dass die Verantwortlichkeit eines Moduls zu maximal einem Akteur gehört. Konkret darf jedes Modul nur einmal abgeändert werden müssen, unabhängig davon wie viele Anforderungen sich ändern. Bei Verletzung kann eine Anpassung des Codes zu unerwarteten Nebenwirkungen führen. Als Beispiel kann eine Funktion gesehen werden, welche überprüft, ob ein Passwort alle Anforderungen erfüllt. Diese Funktion wird für sowohl Adminaccounts als auch für normale Benutzeraccounts verwendet. Eine neue Anforderung sieht vor, dass Adminaccounts zukünftig eine höhere Mindestlänge besitzt. Eine unaufmerksame Änderung der Funktion hat somit auch eine Auswirkung auf Benutzeraccounts. Dies ist ein Widerspruch des Single-Responsibility-Prinzips. Eine allgemeinere Variante besagt, dass jede Variable, Methode, Klasse usw. genau eine Aufgabe besitzt.
 
 \subsubsection{Open-Closed-Prinzip} Hierdurch werden zwei gewünschte Aspekte eines Moduls beschrieben. Einerseits sollte ein Modul offen sein für Erweiterungen, andererseits geschlossen gegenüber Veränderung. Dies soll es Entwicklern ermöglichen bereits bestehende Funktionalitäten auszubauen ohne dass der Code, welcher auf diese Funktion basiert, abändern zu müssen. Eine Möglichkeit dieses Prinzip anzuwenden ist die Verwendung eines Interfaces, um Module mit unterschiedlichen Implementierungen  
 
+\subsubsection{Liskovsches Substitutionsprinzip} Das in 1994 von Barbara Liskov und Jeannette Wing definierte Prinzip besagt, dass eine Unterklasse S einer Oberklasse T die Korrektheit einer Anwendung nicht beeinflussen soll, wenn ein Objekt vom Typ T durch ein Objekt vom Typ S ersetzt wird. Als Beispiel kann hier die Oberklasse Nutzer und die Unterklasse Admin verwendet werden. Wird nun ein Passwort an eine Funktion zum Speichern von neuen Passwörtern der Nutzer-Klasse übergeben, kann die Methode erfolgreich durchlaufen, obwohl mit dem gleichen Passwort die gleiche Funktion der Admin-Klasse fehlschlägt, da Admin-Passwörter unter strengeren Richtlinien liegen. Dies Widerspricht dem Substitutionsprinzip. Um die Einhaltung zu garantieren, sollten die beiden Klassen entweder unabhängig voneinander sein, oder die Passwortspeicherungsfunktion in der Admin-Klasse überschrieben werden.
+
+\subsubsection{Interface-Segregation-Prinzip} In vor allem monolithischen Systemen finden sich öfters riesige Interfaces mit einer Vielzahl von Funktionen. Das Interface-Segregation-Prinzip besagt, dass Clients nie gezwungen seinen sollen Schnittstellen zu verwenden, welche mehr Funktionalitäten bereitstellen als benötigt. Dadurch sollen Interfaces übersichtlicher und vor allem nach dem \emph{Single-Responsibility-Prinzip} auch nur eine Verantwortung erfüllen.
+
+\subsubsection{Dependency-Inversion-Prinzip} Um die Software flexibler und anpassbarer zu gestalten, sollten die Module   so weit wie möglich unabhängig von anderen Modulen designt werden. Änderungen an den Quelltext bergen das Risiko unerwünschte Nebeneffekte zu erzeugen oder zwingen den Entwickler auch Anpassungen an weiteren Modulen vorzunehmen. Durch eine lose Kopplung sollen solche Situation vermieden werden. Der erste Teil des \emph{Dependency-Inversion-Prinzip} befasst sich hiermit. Der erste Teil dieser Richtlinie besagt, dass höherliegende Komponenten nicht direkt von darunterliegenden Komponenten abhängig sein sollen, sondern die Kommunikation zwischen ihnen über eine abstrakte Schnittstelle geschieht. Der zweite Abschnitt des Prinzips befasst sich wie diese Abstraktion designt wird, um eine höhere Wiederverwendbarkeit der höheren Ebenen zu gewährleisten. Das Interface sollte hiernach nicht an die Implementierung gekoppelt sein, sondern die Details sollten von der Abstraktion abhängen. Bei richtiger Anwendung können dadurch höhere Module, ohne die Korrektheit des Programms zu gefährden, die darunterliegenden Module austauschen solange die Abstraktionsschicht die gleiche ist.
+
+
+
+\subsection{Das GRASP-Akronym} Ausgeschrieben 'General Responsibility Assignment Software Patterns' ist eine Ansammlung von neun Entwurfsmustern, welche in der objektorientierten Programmierung Anwendung finden.
+
+\subsubsection{Information Expert} Die Verantwortung zur Lösung eines Domainproblems sollte bei dem Modul liegen, welchem die meisten der benötigten Informationen bereitsteht.
+
+\subsubsection{Niedrige Kopplung} Abhängigkeit zwischen Module bzw. Klassen sollte stets so gering wie möglich gehalten werden, um die Testbarkeit, Wiederverwendbarkeit und zum Schutze von äußeren Änderungen zu steigern.
+
+\subsubsection{Hohe Kohäsion} Vergleichbar mit dem \emph{Single-Responsibility-Prinzip} sollten Module eng mit ihrer zugetragenen Aufgabe verbunden sein, wodurch weiterhin eine \emph{niedrige Kopplung} unterstützt wird.
+
+
+
+\subsection{Weiter Indikatoren} Es gibt viele weitere Qualitätsattribute von Software, welche je nach Anwendung unterschiedliche Gewichtung tragen. Universal sind \emph{Testbarkeit}, \emph{Skalierbarkeit} und \emph{Einfachheit}  Eigenschaften von hoher Bedeutung bei Softwarearchitekturen.
+
+
+
 \section{Schichtenarchitektur}
 
-
-%TODO: Erkärung Schichtenarchitektur
-%TODO: Crude
+Eine Schichtenarchitektur teilt die Module einer Applikation in verschiedene Ebenen, sogenannte Schichten, ein. Dadurch können Applikationsteile unabhängig voneinander abgeändert oder sogar ganz ersetzt werden. Die Schichtenanzahl variiert je Anwendung, jedoch liegt diese meist zwischen drei und vier. Beispielhaft kann eine Einteilung in Präsentations-, Business- und Datenhaltungsschicht erfolgen.
 
 \subsection{SOLID-Prinzipien in der Schichtenarchitektur}
 
-Durch die horizontale Einteilung der Software in Schichten wird eine grobe, natürliche Trennung von Funktionalitäten erzwungen. Somit wird verhindert, dass eine Komponente beispielsweise gleichzeitig Businesslogik und Zugriff auf die Datenbank regelt. Jedoch ist eine vertikale Trennung nicht gegeben und Module können weiterhin verschieden Aufgaben erfüllen, wodurch das \emph{Single-Responsibility-Prinzip} nicht eingehalten ist, ohne die Schichteneinteilung zu verletzten. \\
+Der größte Vorteil dieser Architekturart ist eine erzwungene grobe, natürliche Trennung von Funktionalitäten durch die horizontale Schichteneinteilung. Somit soll verhindert werden, dass eine Komponente beispielsweise Businesslogik und gleichzeitig Zugriff auf die Datenbank regelt. Allerdings ist eine vertikale Trennung nicht gegeben und Module können weiterhin verschieden Aufgaben erfüllen. Dadurch ist es möglich, die Schichteneinteilung nicht zu verletzten, jedoch das \emph{Single-Responsibility-Prinzip} zu brechen.
 
-Die klare Aufteilung unterstützt den Entwickler abstrakte Schnittstellen zwischen den Schichten zu definieren. Diese Abstraktionen sollten laut dem \emph{Open-Closed-Prinzip} als geschlossen und die konkrete Implementierung der Schichtenfunktion als offen behandelt werden. Weiterhin besagt das \emph{Interface-Segregation-Prinzip}, dass diese Schnittstellen so präzise und klein wie möglich gehalten werden sollen. Bei korrekter Anwendung des Prinzips müssen bei steigender Softwarekomplexität weitere Interfaces beziehungsweise Schichten definiert, wodurch die Übersichtlichkeit des Quelltextes gemindert wird. \\
+Die klare Aufteilung unterstützt den Entwickler Anforderungen zu definieren, welche eine obere Schicht an darunterliegende Schichten hat. Diese Anforderungen können wiederum als abstrakte Schnittstelle festgelegt werden. Angewandt bedeutet \emph{Dependency-Inversion-Prinzip} auf die Schichtenarchitektur, dass die Details abhängig von diesen Interfaces sein müssen. Beispielsweise gelten Benutzerinterface- und Datenzugriffsschicht als solche Details und sind an die inneren Schichten gebunden. Damit die darüber liegenden Ebenen nicht von Änderungen an den Implementierungen betroffen sind, sollten diese Abstraktionen laut dem \emph{Open-Closed-Prinzip} als geschlossen und die gelten. Ebenso können die Schnittstellen jedoch stetig mit neuen Funktionalität erweitert oder andere konkrete Implementierungen des gleichen Interfaces erstellt werden. Um weiterhin einen SOLID-Ansatz zu verfolgen, müssen wegen dem \emph{Interface-Segregation-Prinzip} die Schnittstellen so klein und präzise wie möglich gehalten werden, damit obere Schichten nur von ihren wirklich benötigten Funktionen abhängig sind.
 
-Das \emph{Liskovsches Substitutionsprinzip} ist von der unterliegenden Architektur unabhängig und bezieht sich auf die Komposition von Klassen und ihre Relationen zueinander. Dadurch beeinflusst eine Schichtenarchitektur diese Richtlinie nicht. \\
+Das \emph{Liskovsches Substitutionsprinzip} ist von der unterliegenden Architektur unabhängig und bezieht sich auf die Komposition von Klassen und ihre Relationen zueinander. Dadurch beeinflusst eine Schichtenarchitektur diese Richtlinie nicht und kann in dieser Analyse vernachlässigt werden.
+
+
 
 
 %This is where we run into problems with the layered architecture. Since the data access layer is at the base of everything, it implies that it should own the data access interface. However, since the data access layer holds the details of data access, it shouldn’t actually own the interface. And if we’re following true DIP and IOC, we would end up with more of an onion or hexagontal architecture.
@@ -87,13 +111,32 @@ Das \emph{Liskovsches Substitutionsprinzip} ist von der unterliegenden Architekt
 
 
 
-\subsection{Andere Entwicklungsfaktoren}
+\subsection{Weitere Entwicklungsfaktoren}
+
+Durch die Schichtentrennung können einzelne Module unabhängig voneinander getestet werden indem Abhängigkeiten durch Dummy-Objekte, sogenannte Mocks, ersetzt werden. 
 
 
 \section{Hexagonale Architektur}
 
-\section{Vergleich der Architekturstile}
+
+%TODO: Was sind Ports? In dem Applikationskern oder außerhalb
+In der von Alistair Cockburn geprägte Architektur ist der Hauptgedanke die Einteilung von Modulen in Adaptern und Applikationskern. Die Kommunikation zwischen ihnen geschieht hierbei über abstrakte Interfaces, die sogenannten Ports. Adapter sind Schnittstellen zwischen externe Systeme und der Businesslogik. Daher wird dieser Stil auch \emph{Ports und Adapter Architektur} genannt. 
+
+\subsection{Vergleich mit Schichtenarchitektur}
+
+Bei genauer Betrachtung fällt auf, dass Hexagonale Architektur eine Schichtenarchitektur ist, welche das \emph{Dependency-Inversion-Prinzip} fest implementiert. Hierbei werden Schichten ohne Businesslogik in den äußeren Ring bewegt und stellen die Adapter dar. Ports sind somit die verbleibenden Schichten, welche Schnittstellen für die Adapter bereitstellen und definieren.
+
+\subsection{Designprinzipien in einer Hexagonaler Architektur}
  
+%Als Basis können die gewonnenen Erkenntnisse der SOLID-Analyse in der Schichtenarchitektur auch weiterhin für die Hexagonale Architektur angewandt werden. 
+
+Der fundamentale Gedanke in diesem Architekturstil liegt in der eingebauten Verwendung des \emph{Dependency-Inversion-Prinzip} zwischen dem Applikationskern und den Adaptern, da die Ports nativ dem Kern zugewiesen sind. Zusätzlich werden Entwickler gezwungen das \emph{Interface-Segregation-Prinzip} zu implementieren, da die Kommunikation stets über Ports geschieht, welche als Interfaces realisiert werden. Ebenfalls wird das \emph{Open-Closed-Prinzip} natürlich angewandt, da die Ports als geschlossen und die Adapter als offen gelten.
+
+Unverändert zu der Schichtenarchitektur ist nur eine grobe Einteilung der Verantwortungen gegeben. Dieser Aspekt kann verbessert werden, wenn die Ports und Adapter Architektur durch einen Domain-Driven Design Ansatz erweitert wird. Weiterhin ist das \emph{Liskovsches Substitutionsprinzip} nicht in der Architektur verankert.
+
+\subsection{Vergleich von Schichten- und Hexagonaler Architektur}
+
+%CRUD, Kern, Einfachheit
 
 \printbibliography
 
