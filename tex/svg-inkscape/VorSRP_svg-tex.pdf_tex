@@ -1,0 +1,70 @@
+%% Creator: Inkscape 1.1.1 (3bf5ae0d25, 2021-09-20), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'VorSRP_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{255.75bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.50146628)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{VorSRP_svg-tex.pdf}}%
+    \put(0.228739,0.44281525){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Benutzer\end{tabular}}}}%
+    \put(0.01759531,0.35483871){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ prüfePasswort(passwort)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{VorSRP_svg-tex.pdf}}%
+    \put(0.76832845,0.44281525){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Admin\end{tabular}}}}%
+    \put(0.55718475,0.35483871){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ prüfePasswort(passwort)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{VorSRP_svg-tex.pdf}}%
+    \put(0.49266862,0.1202346){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}PasswortValidierer\end{tabular}}}}%
+    \put(0.28152493,0.03225806){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ prüfePasswort(passwort)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{VorSRP_svg-tex.pdf}}%
+    \put(0.68621701,0.27272727){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{VorSRP_svg-tex.pdf}}%
+    \put(0.30205279,0.27272727){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
