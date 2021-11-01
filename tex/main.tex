@@ -27,7 +27,7 @@
 
 % <-- title
 
-\title{Prinzipien und Anwendung des Software Designs anhand von Schichten- und Hexagonaler Architektur}
+\title{Prinzipien und Anwendung des Softwaredesign anhand von Schichten- und Hexagonaler Architektur}
 
 \author{
 \IEEEauthorblockN{Simon Thalmaier}
@@ -51,136 +51,144 @@ Software, Design, Hexagonale Architektur, Schichtenarchitektur, SOLID
 
 
 \section{Einleitung}
-Seit Jahrzehnten haben sich Softwaresysteme und ihre Architektur weiterentwickelt. Von den damals weitverbreiteten monolithischen Anwendungen sehen wir aktuell einen Aufschwung an kleinen, modulierten Microservices. Immer mehr Geräte haben eingebaute Software und die Größe bzw. Komplexität von Sourcecode steigt mit jedem Jahr, dadurch auch die verbundenen Entwicklungskosten. Immer mehr wandert der Fokus bei  Softwareentwicklung auf Flexibilität, Übersichtlichkeit und Wartbarkeit. Es haben sich daraus verschiedenste Software Architekturen bewährt. \\
-Im Folgenden wird auf bekannte Design-Prinzipien und zwei konkrete Architekturen eingegangen und analysiert.
 
-%TODO: Erweitern und Motivation
+%TODO: Einteilung in Motivation und Forschungsfrage?
+
+Seit Jahrzehnten haben sich Softwaresysteme und ihre Architektur weiterentwickelt. Früher wurden Anwendungen entwickelt ohne viel Wert auf Zukunftssicherheit zu legen. Sie sollten nur eine einzige Aufgabe erfüllen und wurden nur in seltenen Fällen erweitert. Allerdings haben heutzutage immer mehr Geräte eingebaute Software und die Komplexität von Sourcecode steigt mit jedem Jahr, dadurch auch die verbundenen Entwicklungskosten. Viele Unternehmen besitzen eigens geschriebene Programme, welche stets durch Marktänderungen auf neue Anforderungen anpassbar sein sollten. Über die Jahre entsteht dadurch ein verwirrendes, fragiles Konstrukt an Codezeilen, das potenziell bei jeder Änderung neue Fehler entwickeln kann, da diese Systeme nie designt waren jahrelang in Betrieb zu sein. Von diesen damals weitverbreiteten monolithischen Anwendungen sehen wir aktuell eher einen Aufschwung an kleinen, modularisierten Microservice-Architekturen. Diese bieten bei korrekter Anwendung unter anderem erhöhte Übersichtlichkeit, Skalierbarkeit, Testbarkeit und Wartbarkeit. Die Langlebigkeit der Systeme sollen durch die unterliegende Architektur, das Design der Komponenten und Softwaretests sichergestellt werden. Das unüberlegte Programmieren einer Lösung alleinig auf die jetzigen Anforderungen reicht somit in vielen Fällen heutzutage nicht mehr aus. Im Hinblick auf dieses Problem wurden verschiedene Architekturansätze und Designprinzipien entworfen, welche einen Entwickler helfen sollten eine solche stabile Anwendung zu entwickeln.
+
+Hierzu werden in den folgenden Abschnitten einige dieser Konzepte der Softwareentwicklung erläutert. Konkret werden als Beispiele für eine Softwarearchitektur die Schichten- und Hexagonale Architektur analysiert und bewertet. Zuvor muss allerdings ein grundlegendes Verständnis über Softwaredesign geschaffen werden, indem gängige Designrichtlinien aufgezählt und durchleuchtet werden.
 
 
-\section{Prinzipien des Software Designs}
+\section{Prinzipien des Softwaredesigns}
 
-Prinzipien eines idealen Software Designs unterscheiden sich je nach verwendeten Programmierparadigmen und unterliegender Architektur. Diese hängen stark von der Aufgabe und Anforderungen ab, welche das Programm letztendlich erfüllen soll. Um Software zukunftssicher erstellen zu können, wurden über die Jahre Richtlinien definiert, welche Entwickler behilflich sein sollen. Es haben sich hierbei einige Grundsätze durchgesetzt, welche sich auf einzelne Klassen oder auf die Relationen von Module zueinander beziehen. Zunächst werden diese Prinzipien vorgestellt, analysiert und die resultierenden Auswirkungen bei Einhaltung bzw. Nichteinhaltung erläutert.
+Damit eine zukunftssichere Software gewährleistet werden kann, muss die Anwendung gewünschte Eigenschaften wie unter anderem Anpassbarkeit, Wiederverwendbarkeit, Übersichtlichkeit, Skalierbarkeit, Effizienz und Korrektheit besitzen. Über die Jahre wurden verschiedene Ansätze definiert, welche bei korrekter Einhaltung diese Attribute sicherstellen sollen. Sie beziehen sich oft auf einzelne Module oder ihre Relationen zueinander. Je nach Aufgabe und Anforderungen der Softwarelösung werden verschiedenste Programmierparadigmen und unterliegende Architekturen verwendet, dabei unterscheiden sich auch die verwendeten Prinzipien. In dieser Arbeit wird der Fokus auf objektorientierte Ansätze gelegt. Dabei werden zunächst einige der Richtlinien vorgestellt, analysiert und die resultierenden Auswirkungen bei Einhaltung bzw. Nichteinhaltung erläutert. Dies soll eine Basis schaffen die Anwendung der Prinzipien zu ermöglichen und auch Architekturen sowie Sourcecode bewerten zu können.
 
-%TODO: Auswirkungen erklären und Bilder der Prinzipien
 
 
 \subsection{Das SOLID-Akronym}
 
-Von Michael Feathers und Robert C. Martin geprägt, zählen die SOLID Prinzipien zu dem Fundament eines stabilen Designs. Es beschreibt wünschenswerte Eigenschaften von Komponenten und ihre Beziehungen zueinander. Eine Softwarearchitektur sollte somit den Entwickler dabei unterstützen, diese Prinzipien anzuwenden. 
+%TODO: Mehr?
+Von Michael Feathers und Robert C. Martin geprägt, zählen die SOLID-Prinzipien zu dem Fundament eines stabilen Designs. Sie erlauben Software auch bei steigender Komplexität weiterhin wartbar zu bleiben. Idealerweise sollte somit eine Softwarearchitektur den Entwickler bei der Anwendung dieser Prinzipien zu unterstützen. Für die nachfolgende Analyse liegen diese fünf Konzepte im Vordergrund.
 
-\subsubsection{Single-Responsibility-Prinzip} Durch diese Richtlinie soll sichergestellt werden, dass die Verantwortlichkeit eines Moduls zu maximal einem Akteur gehört. Konkret darf jedes Modul nur einmal abgeändert werden müssen, unabhängig davon wie viele Anforderungen sich ändern. Eine allgemeinere Variante besagt, dass jede Variable, Methode, Klasse usw. genau eine Aufgabe besitzen soll. Bei Verletzung kann eine Anpassung des Codes zu unerwarteten Nebenwirkungen führen. Als Beispiel kann eine Funktion gesehen werden, welche überprüft, ob ein Passwort alle Anforderungen erfüllt. Die gleiche Funktion wird für sowohl Adminaccounts als auch für normale Benutzeraccounts verwendet. 
+%TODO: how to ref?
+%TODO: Anderes wort für Abbildung
+%TODO: Punkt bei Caption?
+%TODO: emph or not? Nur Abkürzungen?
+
+
+\subsubsection{Single-Responsibility-Prinzip (SRP)} Durch die erste Richtlinie soll sichergestellt werden, dass die Verantwortlichkeit eines Moduls zu maximal einem Akteur gehört. Konkret darf jedes Modul nur für eine Anforderung zuständig sein. Sollten mehrere neue Anwendungsfällen definiert werden, dann muss bei korrekter Einhaltung des \emph{SRP} Komponenten maximal einmal angepasst werden. Eine allgemeinere Variante besagt, dass jede Variable, Methode, Klasse usw. genau eine Aufgabe besitzen soll. Dadurch bleiben Module übersichtlich und die Anzahl der Abhängigkeiten gering. Dies erhöht die allgemeine Testbarkeit und schützt vor unerwarteten Nebeneffekten bei Codeanpassungen. Hingegen kann bei Verletzung eine enge Bindung der Klassen entstehen und die Software dadurch monolithische Eigenschaften entwickeln. 
+
+Als Beispiel kann eine Funktion gesehen werden, welche überprüft, ob ein Passwort alle Sicherheitsanforderungen erfüllt. Die gleiche Funktion wird für sowohl Adminaccounts als auch für normale Benutzeraccounts verwendet. Anfangs sind die Anforderungen beider Passworttypen gleich und somit wird ein Passwortvalidator erstellt, welche beide Klassen benutzen (Abbildung \ref{fig:VorSRP}).
 
 \begin{figure}[htbp]
 	\small
 	\includesvg[width=250pt]{img/VorSRP.svg}
-	\caption{Verletzung des Single-Responsibility-Prinzip}
-	\label{VorSRP}
+	\caption{Beide Accountklassen verwenden den gleichen Validator entgegen des \emph{SRP}}
+	\label{fig:VorSRP}
 \end{figure}
 
 
-Eine neue Anforderung sieht vor, dass Adminaccounts zukünftig eine höhere Mindestlänge besitzt. Eine unaufmerksame Änderung der Funktion hat somit auch eine Auswirkung auf Benutzeraccounts. Dies ist ein Widerspruch des Single-Responsibility-Prinzips. Die Funktionen müssen somit unterschiedliche Implementierungen besitzen. 
+Eine neue Anforderung sieht vor, dass Adminaccounts zukünftig eine höhere Mindestlänge besitzt. Eine unaufmerksame Änderung der Funktion hat somit eine Auswirkung auf beide Benutzeraccounts entgegen des \emph{Single-Responsibility-Prinzips}. Die Funktionen müssen somit wie in Figur \ref{fig:NachSRP} unterschiedliche Validatoren aufrufen. 
 
 \begin{figure}[htbp]
 	\small
 	\includesvg[width=250pt]{img/NachSRP.svg}
-	\caption{Anwendung des Single-Responsibility-Prinzip an dem vorherigen Beispiel}
-	\label{NachSRP}
+	\caption{Anwendung des Single-Responsibility-Prinzip zur Passwortvalidierung}
+	\label{fig:NachSRP}
 \end{figure}
 
 
 
-\subsubsection{Open-Closed-Prinzip} Hierdurch werden zwei gewünschte Aspekte eines Moduls beschrieben. Einerseits sollte ein Modul offen sein für Erweiterungen, andererseits geschlossen gegenüber Veränderung. Dies soll es Entwicklern ermöglichen bereits bestehende Funktionalitäten anzupassen ohne dass der Code, welcher auf diese Funktionsweise basiert, bricht oder abgeändert werden muss. Eine Möglichkeit dieses Prinzip anzuwenden ist das Definieren eines geschlossenen, unveränderbaren Interfaces. Module können diese Schnittstelle und die benötigten Eigenschaften implementieren, aber dennoch jederzeit mit neuen Feldern und Funktionen erweitert werden. Durch Polymorphie ist es weiterhin möglich die konkreten Implementierung hinter dem Interface auszuwechseln. Damit bleiben Abhängigkeiten flexibel und zusätzliche Anforderungen können leichter der Software hinzugefügt werden. 
-
-Angewandt an dem Passwortbeispiel ist es möglich ein Interface für den  Validierer zu definieren, welches die benötigte Funktion bereitstellt. Obwohl das Interface an sich als geschlossen gilt und somit nicht abgeändert werden sollte, können jederzeit weitere Validierer erstellt werden, welche die bestehende Funktionalitäten implementieren und darüber hinaus erweitern können, wie in Abbildung \ref{OCP} dargestellt wurde. %TODO: how to ref?
+\subsubsection{Open-Closed-Prinzip (OCP)} Entwicklern soll es jederzeit möglich sein bereits bestehende Funktionalitäten anzupassen ohne dass der Code, welcher auf diese Funktionsweise basiert, bricht oder selbst abgeändert werden muss. Hierfür besagt das \emph{OCP}, dass Module einerseits offen für Erweiterungen, andererseits geschlossen gegenüber Veränderungen sein sollten. Dadurch gewinnt die Applikation an Stabilität und Flexibilität. Diese zwei gewünschten Aspekte kann unter anderem erreicht werden indem ein geschlossenes, fest definiertes Interface erstellt wird. Komponente können diese Schnittstelle und die benötigten Eigenschaften implementieren und weiterhin jederzeit mit neuen Feldern und Funktionen erweitert werden. Hierbei ist die Schnittstelle geschlossen und die konkrete Implementierung offen im Sinne des \emph{Open-Closed-Prinzip}. Durch Polymorphie ist es möglich die konkreten Implementierung hinter dem Interface auszuwechseln. Damit bleiben Abhängigkeiten austauschbar und zusätzliche Anforderungen können leichter der Software hinzugefügt werden. 
+ 
+Angewandt an das vorherige Passwortbeispiel ist es möglich ein Interface für den Validator zu definieren, welches die benötigte Funktion bereitstellt. Obwohl das Interface an sich als unveränderlich gilt können jederzeit weitere Validatoren hinzugefügt werden, welche die bestehenden Funktionalitäten der Abstraktion implementieren und darüber hinaus erweitern können (Abbildung \ref{fig:OCP}). 
 
 \begin{figure}[htbp]
 	\small
 	\includesvg[width=250pt]{img/OCP.svg}
-	\caption{Anwendung des Open-Closed-Prinzip}
-	\label{OCP}
+	\caption{Verwenden eines geschlossenes Interface und offener Implementierungen anhand des \emph{OCP}}
+	\label{fig:OCP}
 \end{figure}
 
 
 
-\subsubsection{Liskovsches Substitutionsprinzip} Das in 1994 von Barbara Liskov und Jeannette Wing definierte Prinzip besagt, dass eine Unterklasse S einer Oberklasse T die Korrektheit einer Anwendung nicht beeinflussen soll, wenn ein Objekt vom Typ T durch ein Objekt vom Typ S ersetzt wird. Als Beispiel kann hier die Oberklasse Nutzer und die Unterklasse Admin verwendet werden. Wird nun ein Passwort an eine Funktion zum Speichern von neuen Passwörtern der Nutzer-Klasse übergeben, kann die Methode erfolgreich durchlaufen, obwohl mit dem gleichen Passwort die gleiche Funktion der Admin-Klasse fehlschlägt, da Admin-Passwörter unter strengeren Richtlinien liegen. Dies Widerspricht dem Substitutionsprinzip.
+\subsubsection{Liskovsches Substitutionsprinzip (LSP)} Das in 1994 von Barbara Liskov und Jeannette Wing definierte Prinzip besagt, dass eine Unterklasse S einer Oberklasse T die Korrektheit einer Anwendung nicht beeinflussen soll, wenn ein Objekt vom Typ T durch ein Objekt vom Typ S ersetzt wird. Hierbei werden einige Bedingungen an einer Unterklasse gestellt. Unter anderem dürfen die Vorbedingungen einer Methode in einem Subtyp nicht strenger sein als in der Oberklasse und Nachbedingungen nicht schwächer erzwungen werden. Dadurch erhalten Klassen höhere Wiederverwendbarkeit und die Applikation erhält reduzierte Fehleranfälligkeit.
 
+Als konkretes Beispiel hierfür kann die Oberklasse Benutzer (Typ T) und die Unterklasse Admin (Typ S) verwendet werden. Die Adminklasse überschreibt hierbei die vererbte Methode zum Überprüfen der Passwörter, allerdings sind die Vorbedingungen bzw. Sicherheitsbedingungen strenger. Dadurch kann die Methode ein anderes Ergebnis liefern, wenn ein Benutzertyp substituiert wird durch ein Objekt der Adminklasse, falls das übergebene Passwort zwar die Bedingungen eines Benutzerpassworts erfüllt, allerdings nicht die eines Adminpassworts (Abbildung \ref{fig:VorLSP}). 
 
-%TODO: Make all small, REF ALL and rename REF to img:... !!!
 
 \begin{figure}[htbp]
 	\small
 	\includesvg[width=250pt]{img/VorLSP.svg}
-	\caption{Verletzung des Liskovsches Substitutionsprinzip}
-	\label{VorLSP}
+	\caption{Verletzung des Liskovsches Substitutionsprinzip durch die stärkeren Vorbedingungen der Funktion in der Adminklasse }
+	\label{fig:VorLSP}
 \end{figure}
 
-Um die Einhaltung zu garantieren, sollten die beiden Klassen entweder unabhängig voneinander sein, oder die Passwortspeicherungsfunktion in der Admin-Klasse überschrieben werden. 
- 
-\begin{figure}[htbp]
-	\small
-	\includesvg[width=250pt]{img/NachLSP.svg}
-	\caption{Anwendung des Liskovsches Substitutionsprinzip an dem vorherigen Beispiel}
-	\label{NachLSP}
-\end{figure}
- 
-Das \emph{Liskovsches Substitutionsprinzip} ist von der unterliegenden Architektur unabhängig und bezieht sich auf die Komposition von Klassen und ihre Relationen zueinander. Dadurch beeinflusst eine Architektur diese Richtlinie nicht und kann in den folgenden Analyse vernachlässigt werden. %TODO: Letzter Satz hier oder später?
+Um die Einhaltung des \emph{LSP} zu garantieren, sollten die beiden Klassen unabhängig voneinander designt werden.
 
 
 
-\subsubsection{Interface-Segregation-Prinzip} In vor allem monolithischen Systemen finden sich öfters riesige Interfaces mit einer Vielzahl von Funktionen. Das Interface-Segregation-Prinzip besagt, dass Clients nie gezwungen seinen sollen Schnittstellen zu verwenden, welche mehr Funktionalitäten bereitstellen als sie benötigen. Dadurch sollen Interfaces übersichtlich sein und vor allem nach dem \emph{Single-Responsibility-Prinzip} auch nur eine Verantwortung erfüllen.
+\subsubsection{Interface-Segregation-Prinzip} In vor allem monolithischen Systemen finden sich öfters riesige Interfaces mit einer Vielzahl von Funktionen. Dadurch wird die Software undurchsichtig und komplex. Das \emph{ISP} soll dies verhindern, da Clients nie gezwungen seinen sollen Schnittstellen zu verwenden, welche mehr Funktionalitäten bereitstellen als sie benötigen. Dadurch werden Interfaces übersichtlich und abhängige Komponenten sind mehr entkoppel.
+Zusätzlich hilft dieses Prinzip die Einhaltung des \emph{Single-Responsibility-Prinzip} zu gewährleisten, indem die Schnittstellen nur eine Verantwortung erfüllen. Beispielhaft bietet im Schaubild \ref{fig:VorISP} ein Interface der Datenbankzugriffsschicht Funktionen zur Speicherung unterschiedlicher Entitäten an. Somit sind Service der Applikationsschicht abhängig von einem Interface mit Funktionen, welche die einzelnen Komponente nicht benötigen. Zu beachten ist ebenfalls, dass auch das \emph{SRP} hierbei gebrochen wird.
 
 \begin{figure}[htbp]
 	\small
 	\includesvg[width=250pt]{img/VorISP.svg}
-	\caption{Verletzung des Interface-Segregation-Prinzip}
-	\label{VorISP}
+	\caption{Die Abhängigkeit zwischen Klassen und einem großen Interface bricht das \emph{ISP} }
+	\label{fig:VorISP}
 \end{figure}
 
-%TODO: Schreiben anhand Abbildung
+Damit eine Applikation von den oben genannten positiven Eigenschaften profitieren kann, muss die Schnittstelle durch eine Extraktion der Methoden aufgeteilt werden (Abbildung \ref{fig:NachISP}).
 
 \begin{figure}[htbp]
 	\small
 	\includesvg[width=250pt]{img/NachISP.svg}
-	\caption{Anwendung des Interface-Segregation-Prinzip an dem vorherigen Beispiel} %TODO: Verweis auf andere Abbildungen in caption?
-	\label{NachISP}
+	\caption{Geringere Kopplung der Service durch kleinere, spezifischere Schnittstellen} 
+	\label{fig:NachISP}
 \end{figure}
 
-\subsubsection{Dependency-Inversion-Prinzip} Um die Software flexibler und anpassbarer zu gestalten, sollten die Module   so weit wie möglich unabhängig von anderen Modulen designt werden. Änderungen an den Quelltext bergen das Risiko unerwünschte Nebeneffekte zu erzeugen oder zwingen den Entwickler auch Anpassungen an weiteren Modulen vorzunehmen. Durch eine lose Kopplung sollen solche Situation vermieden werden. Der erste Teil des \emph{Dependency-Inversion-Prinzip} besagt, dass höherliegende Komponenten nicht direkt von darunterliegenden Komponenten abhängig sein sollen, sondern die Kommunikation zwischen ihnen über eine abstrakte Schnittstelle geschieht. Der zweite Abschnitt des Prinzips befasst sich wie diese Abstraktion designt wird, um eine höhere Wiederverwendbarkeit der höheren Ebenen zu gewährleisten. Das Interface sollte hiernach nicht an die Implementierung gekoppelt sein, sondern die Details sollten von der Abstraktion abhängen. Bei richtiger Anwendung können dadurch höhere Module, ohne die Korrektheit des Programms zu gefährden, die darunterliegenden Module austauschen solange die Abstraktionsschicht die gleiche ist.
+
+
+\subsubsection{Dependency-Inversion-Prinzip} Um Software flexibler und anpassbarer zu gestalten, sollten die Module so viel wie möglich unabhängig von anderen Modulen designt werden. Änderungen an den Quelltext bergen das Risiko unerwünschte Nebeneffekte zu erzeugen oder zwingen den Entwickler auch Anpassungen an weiteren Modulen vorzunehmen. Durch eine lose Kopplung sollen solche Situation vermieden werden. Der erste Teil des \emph{Dependency-Inversion-Prinzip} besagt, dass konzeptionelle höherliegende Komponenten nicht direkt von darunterliegenden Komponenten abhängig sein sollen, sondern die Kommunikation zwischen ihnen über eine abstrakte Schnittstelle geschieht. Das in der Abbildung \ref{fig:VorDIP} beschriebene Beispiel sollte somit die Service durch ein Interface entkoppeln, da sie auf unterschiedlichen Abstraktionsschichten liegen. Der zweite Abschnitt des Prinzips befasst sich wie diese Schnittstellen designt werden, um eine höhere Wiederverwendbarkeit der höheren Ebenen zu gewährleisten. Das Interface sollte hiernach nicht an die Implementierung gekoppelt sein, sondern die Details sollten von der Abstraktion abhängen. Details können hierbei die konkreten Implementierungen oder die Businesslogik sein. Bei richtiger Anwendung können dadurch höhere Module, ohne die Korrektheit des Programms zu gefährden, die darunterliegenden Module austauschen solange die Abstraktionsschicht gleich ist.
 
 \begin{figure}[htbp]
 	\small
 	\includesvg[width=250pt]{img/VorDIP.svg}
-	\caption{Verletzung des Dependency-Inversion-Prinzip}
-	\label{VorDIP}
+	\caption{Klassen auf verschiedenen konzeptionellen Ebenen sind entgegen des \emph{DIP} direkt voneinander abhängig}
+	\label{fig:VorDIP}
 \end{figure}
 
-%TODO
+In der Abbildung \ref{fig:VorDIP} sind dabei beide Teile des \emph{DIP} verletzt. Dies wird in Figur \ref{fig:NachDIP} korrigiert indem Details von hinzugefügten Schnittstellen abhängig gemacht werden. Das BenutzerBusinessInterface kann hierbei entweder dem BenutzerAPIService oder BenutzerBusinessService zugewiesen werden. Stehen die Businessanforderungen im Vordergrund, so sollte die Schnittstelle eher der Businessebene zugeteilt sein und die Details, somit der API-Service, davon abhängig gemacht werden.
 
 \begin{figure}[htbp]
 	\small
 	\includesvg[width=250pt]{img/NachDIP.svg}
 	\caption{Anwendung des Dependency-Inversion-Prinzip anhand einer Schichtenarchitektur}
-	\label{NachDIP}
+	\label{fig:NachDIP}
 \end{figure}
 
-\subsection{Das GRASP-Akronym} Ausgeschrieben 'General Responsibility Assignment Software Patterns' ist eine Ansammlung von neun Entwurfsmustern, welche in der objektorientierten Programmierung Anwendung finden. Im Kontext von Software Design sind folgende drei von größerer Bedeutung.
-
-\subsubsection{Information Expert} Die Verantwortung zur Lösung eines Domainproblems sollte bei dem Modul liegen, welchem die meisten der benötigten Informationen bereitsteht.
-
-\subsubsection{Niedrige Kopplung} Abhängigkeit zwischen Module bzw. Klassen sollte stets so gering wie möglich gehalten werden, um die Testbarkeit, Wiederverwendbarkeit und zum Schutze von äußeren Änderungen zu steigern.
-
-\subsubsection{Hohe Kohäsion} Vergleichbar mit dem \emph{Single-Responsibility-Prinzip} sollten Module eng mit ihrer zugetragenen Aufgabe verbunden sein, wodurch weiterhin eine \emph{niedrige Kopplung} unterstützt wird.
 
 
+\subsection{Das GRASP-Akronym} Ausgeschrieben 'General Responsibility Assignment Software Patterns' ist eine Ansammlung von neun Entwurfsmustern, welche in der objektorientierten Programmierung Anwendung finden. Im Kontext von architektonischem Softwaredesign sind folgende drei Konzepte von größerer Bedeutung.
 
-\subsection{Weitere Messwerte für Architekturdesign} Es gibt zahlreiche weitere Qualitätsattribute, welche je nach Software unterschiedliche Gewichtung tragen. \emph{Testbarkeit} definiert im welchen Maß Module unabhängig voneinander getestet werden können, ohne dabei Änderungen an Architektur oder den Modulen selbst vornehmen zu müssen. \emph{Skalierbarkeit} hingegen beschreibt wie einfach eine Anwendung erhöhte Last abarbeiten kann, indem einzelne Teile bzw. der ganzen Applikation weitere Ressourcen zur Verfügung gestellt werden. Auch im Sinne wie übersichtlich und anpassbar eine Applikation auch bei steigender Codeanzahl bleibt spielt bei Skalierbarkeit eine Rolle. \emph{Einfachheit} charakterisiert im welchen Maß ein Entwickler Erfahrung und Aufwand erfordert die gewählte Architektur umzusetzen.
+\subsubsection{Informationsexperte} Die Verantwortung zur Lösung eines Domainproblems sollte bei dem Modul liegen, welchem die meisten der benötigten Informationen bereitsteht.
+
+\subsubsection{Niedrige Kopplung} Abhängigkeiten zwischen Module bzw. Klassen sollte stets so gering wie möglich gehalten werden. Dadurch wird Testbarkeit, Wiederverwendbarkeit und der Schutz von äußeren Änderungen gesteigert.
+
+\subsubsection{Hohe Kohäsion} Vergleichbar mit dem \emph{Single-Responsibility-Prinzip} sollten Module eng mit ihrer zugetragenen Aufgabe verbunden sein, wodurch weiterhin eine niedrige Kopplung unterstützt wird.
+
+
+
+\subsection{Weitere Messwerte für Architekturdesign} Es gibt zahlreiche Qualitätsattribute für Software, welche je nach Kontext der Anforderungen unterschiedliche Gewichtung tragen. Die vorher aufgelisteten Prinzipen wirken sich auf diese Eigenschaften positiv aus. Für die nachfolgende Analyse sind drei Indikatoren von allgemein großer Bedeutung. 
+
+\emph{Testbarkeit} definiert im welchen Maße Module unabhängig voneinander getestet werden können, ohne dabei Änderungen an Architektur oder den Modulen selbst vornehmen zu müssen. \emph{Skalierbarkeit} hingegen beschreibt wie einfach eine Anwendung erhöhte Lasten abarbeiten kann, indem einzelne Teile bzw. die ganzen Applikation weitere Ressourcen zur Verfügung gestellt bekommt. Auch wie übersichtlich und anpassbar eine Applikation auch bei steigender Anzahl an Codezeilen bleibt, spielt bei Skalierbarkeit eine Rolle. \emph{Einfachheit} charakterisiert wie viel Erfahrung und Aufwand erfordert wird, um die gewählte Architektur korrekt umzusetzen.
 
 
 \section{Schichtenarchitektur}
 
-Eine Schichtenarchitektur teilt die Module einer Applikation in verschiedene Ebenen, sogenannte Schichten, ein. Dadurch können Applikationsteile unabhängig voneinander abgeändert oder sogar ganz ersetzt werden. Die Schichtenanzahl variiert je Anwendung, jedoch liegt diese meist zwischen drei und vier. Beispielhaft kann eine Einteilung in Präsentations-, Business- und Datenhaltungsschicht erfolgen. Aufgrund der Eigenschaften einer Schichtenarchitektur wird dieser Ansatz häufig bei simplen CRUD-Applikationen verfolgt. CRUD steht im Kontext der Softwareentwicklung für '\textbf{Cr}eate \textbf{U}pdate \textbf{D}elete', somit sind Anwendungen gemeint, welche Daten erzeugen, bearbeiten und löschen mit geringer bis keiner Businesslogik. Der Kern einer solchen Software sind die Daten selbst, dabei werden Module und die umliegende Architektur angepasst, um die Datenverarbeitung zu vereinfachen. %TODO: \ref{Schichtenarchitektur}
+Eine Schichtenarchitektur teilt die Software in verschiedene Ebenen, sogenannte Schichten, ein. Dadurch können Applikationsteile unabhängig voneinander abgeändert oder sogar ganz ersetzt werden. Die Schichtenanzahl variiert je Anwendung, jedoch liegt diese meist zwischen drei und vier. Beispielhaft kann eine Einteilung in Präsentations-, Business- und Datenhaltungsschicht erfolgen. Aufgrund der Eigenschaften einer Schichtenarchitektur wird dieser Ansatz häufig bei simplen CRUD-Applikationen verfolgt. CRUD steht im Softwarekontext für '\textbf{Cr}eate \textbf{U}pdate \textbf{D}elete', somit sind Anwendungen gemeint, welche Daten mit geringer bis keiner Businesslogik erzeugen, bearbeiten und löschen. Der Kern einer solchen Software sind die Daten selbst, dabei werden Module und die umliegende Architektur angepasst, um die Datenverarbeitung zu vereinfachen. Der Kontrollfluss fließt dabei von höhergelegenen in tiefere Ebenen. Ohne Anwendung des \emph{DIP} ist der Abhängigkeitsgraph gleichgerichtet mit dem Kontrollfluss. Eine graphische Darstellung einer solchen Architektur bietet Abbildung \ref{Schichtenarchitektur}.
 
-%TODO: Reactive
+
 \begin{figure}[htbp]
 	\small
 	\includesvg[width=250pt]{img/Schichtenarchitektur.svg}
@@ -191,24 +199,20 @@ Eine Schichtenarchitektur teilt die Module einer Applikation in verschiedene Ebe
 
 \subsection{SOLID-Prinzipien in der Schichtenarchitektur}
 
-Der größte Vorteil dieser Architekturart ist eine erzwungene grobe, natürliche Trennung von Funktionalitäten durch die horizontale Schichteneinteilung. Somit soll verhindert werden, dass eine Komponente beispielsweise Businesslogik und gleichzeitig Zugriff auf die Datenbank regelt. Allerdings ist eine vertikale Trennung nicht gegeben und Module können weiterhin verschieden Aufgaben erfüllen. Dadurch ist es möglich, die Schichteneinteilung nicht zu verletzten, jedoch das \emph{Single-Responsibility-Prinzip} zu brechen.
+Der größte Vorteil dieser Architekturart ist eine erzwungene natürliche Trennung von Funktionalitäten durch die horizontale Schichteneinteilung. Somit soll verhindert werden, dass eine Komponente beispielsweise den Zugriff auf die Datenbank und gleichzeitig Businesslogik implementiert. Allerdings ist eine vertikale Trennung nicht gegeben und Module können weiterhin verschieden konzeptionelle Aufgaben erfüllen. Dadurch ist es möglich, die Schichteneinteilung einzuhalten, jedoch das \emph{Single-Responsibility-Prinzip} zu brechen. Dadurch ist das \emph{SRP} nur grob in dieser Architektur verankert. Die klare Aufteilung unterstützt den Entwickler Abstraktionen zu definieren, welche Anforderungen eine höhere Schicht an darunterliegende Schichten hat. Diese können wiederum als Schnittstellen festgelegt werden, die laut dem \emph{Dependency-Inversion-Prinzip} der verantwortlichen Schicht zugewiesen sind. Dies ist häufig die über der Implementierung liegende Ebene, kann davon aber auch je nach Applikationsfokus abweichen. In Abbildung \ref{fig:NachDIP} beispielsweise gelten Benutzerinterface- und Datenzugriffsschicht als Details und die Interfaces sind an die Schicht gebunden, welche die Abstraktionen hauptsächlich definieren. Damit die darüber liegenden Ebenen nicht von tiefer stattfindenden Änderungen betroffen sind, sollten diese Schnittstellen zusätzlich durch das \emph{Open-Closed-Prinzip} als geschlossen gelten. Ebenso können die konkreten Implementierungen jedoch stets mit neuen Funktionalität erweitert oder durch andere Module ersetzt werden. Um weiterhin einen SOLID-Ansatz zu verfolgen, sind wegen dem \emph{Interface-Segregation-Prinzip} die Schnittstellen so klein und präzise wie möglich zu designen, damit obere Schichten nur von ihren wirklich benötigten Funktionen abhängig sind. Das \emph{DIP}, \emph{OCP} und \emph{ISP} stehen eng miteinander in Verbindung. Eine Schichtenarchitektur hilft durch die Separierung der Ebenen einen Ansatzpunkt für benötigte Abstraktionen zu bilden, jedoch ist die Anwendung der Prinzipen nicht natürlich in diesem Architekturstil eingebaut.  
 
-%TODO DIP auf verweise der SChichtenarchitektur Abbildung Abbhängigkeit umdrehen !
-
-Die klare Aufteilung unterstützt den Entwickler Anforderungen zu definieren, welche eine obere Schicht an darunterliegende Schichten hat. Diese Anforderungen können wiederum als abstrakte Schnittstelle festgelegt werden. Angewandt bedeutet \emph{Dependency-Inversion-Prinzip} auf die Schichtenarchitektur, dass die Details abhängig von diesen Interfaces sein müssen. Beispielsweise gelten Benutzerinterface- und Datenzugriffsschicht als solche Details und sind an die inneren Schichten gebunden. Damit die darüber liegenden Ebenen nicht von Änderungen an den Implementierungen betroffen sind, sollten diese Abstraktionen laut dem \emph{Open-Closed-Prinzip} als geschlossen und die gelten. Ebenso können die Schnittstellen jedoch stetig mit neuen Funktionalität erweitert oder andere konkrete Implementierungen des gleichen Interfaces erstellt werden. Um weiterhin einen SOLID-Ansatz zu verfolgen, müssen wegen dem \emph{Interface-Segregation-Prinzip} die Schnittstellen so klein und präzise wie möglich gehalten werden, damit obere Schichten nur von ihren wirklich benötigten Funktionen abhängig sind.
-
+Das \emph{Liskovsches Substitutionsprinzip} hingegen ist von der unterliegenden Architektur unabhängig und bezieht sich auf die Komposition von Klassen und ihre Relationen zueinander. Dadurch beeinflusst eine Architektur diese Richtlinie nicht und kann in den folgenden Analyse vernachlässigt werden.
 
 %This is where we run into problems with the layered architecture. Since the data access layer is at the base of everything, it implies that it should own the data access interface. However, since the data access layer holds the details of data access, it shouldn’t actually own the interface. And if we’re following true DIP and IOC, we would end up with more of an onion or hexagontal architecture.
 
 
 
-
 \subsection{Zusätzliche Entwicklungsfaktoren der Schichtenarchitektur}
 
-%TODO: To emph or not to emph?
+Um eine falsche Analyse bei fehlgeschlagenen Modultest zu vermeiden, müssen Module voneinander isolierbar sein. Dank der Schichtentrennung können die erforderliche Abhängigkeiten durch einer Verwendung von Dummy-Objekte, sogenannte Mocks, erfüllt und die geforderte Unabhängigkeit gewährleistet werden. Bei einer unzureichenden Anwendung der SOLID-Designprinzipien können einzelne Applikationsteile stark gekoppelt sein, worunter die Testbarkeit leidet und somit die Fehleranfälligkeit steigt.
 
-Um eine falsche Analyse bei fehlgeschlagenen Modultest zu vermeiden, müssen Module voneinander isolierbar sein. Dank der Schichtentrennung können diese unabhängig und isoliert getestet werden, da die Verwendung von Dummy-Objekte, sogenannte Mocks, erforderliche Abhängigkeiten erfüllen können. Bei einer unzureichenden Anwendung der im vorgehenden Absatz analysierten Designprinzipien sind einzelne Applikationsteile gekoppelt, worunter die Testbarkeit stark sinkt und somit die Fehleranfälligkeit steigt.
 Viele Anwendungen und ihre Anforderungen lassen sich natürlich in verschiedenen Schichten einteilen. Entwickler erhalten mit diesem Architekturstil eine simple, übersichtliche Methode erforderliche Module und ihre Relationen zueinander zu designen. Die Denkweise einer CRUD-Anwendung kann dazu führen, dass eine Software mit einer steigenden Anzahl an Businessanforderungen schlecht skaliert und die Umsetzung der SOLID-Prinzipen vernachlässigt werden, da nicht die Businessregeln im Mittelpunkt stehen sondern die Datenzugriffsschicht, welche allerdings laut dem \emph{Dependency-Inversion-Prinzip} von der Businesslogik abhängig sein sollte. Daraus entsteht möglicherweise eine eng gekoppelte monolithischen Struktur bei der Codeänderungen zu unerwarteten Nebenwirkungen führen kann.
+
 Eigenschaften wie Wartbarkeit und Wiederverwendbarkeit steigen mit dem Einhaltungsgrad der SOLID-Prinzipien. Durch die geringe native Unterstützung dieser Prinzipen sind folglich auch die vorher genannten Eigenschaften gefährdet. 
 
 %TODO: Reactive

@@ -60,13 +60,13 @@
     \put(0.75820896,0.42089552){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Admin\end{tabular}}}}%
     \put(0.53731343,0.33134328){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ prüfePasswort(passwort)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{NachSRP_svg-tex.pdf}}%
-    \put(0.23880597,0.12238806){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}BenutzerPasswortValidierer\end{tabular}}}}%
+    \put(0.23880597,0.12238806){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}BenutzerPasswortValidator\end{tabular}}}}%
     \put(0.01791045,0.03283582){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ prüfePasswort(passwort)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{NachSRP_svg-tex.pdf}}%
-    \put(0.75820896,0.12238806){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}AdminPasswortValidierer\end{tabular}}}}%
+    \put(0.75820896,0.12238806){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}AdminPasswortValidator\end{tabular}}}}%
     \put(0.53731343,0.03283582){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ prüfePasswort(passwort)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{NachSRP_svg-tex.pdf}}%
-    \put(0.18507463,0.2358209){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
+    \put(0.18507463,0.23283582){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{NachSRP_svg-tex.pdf}}%
     \put(0.8119403,0.22985075){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
   \end{picture}%
