@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.11)  1 NOV 2021 22:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.11)  16 NOV 2021 14:15
 entering extended mode
 **./main.tex
 (main.tex
@@ -697,20 +697,20 @@ File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 -- Lines per column: 56 (exact).
 
@@ -793,15 +793,50 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl)
-Package biblatex Info: Reference section=0 on input line 26.
-Package biblatex Info: Reference segment=0 on input line 26.
+ (main.bbl
 
-Underfull \hbox (badness 2426) in paragraph at lines 47--49
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'hex':
+(biblatex)                - Entry 'hex' (ref.bib): Invalid format '14.11.2021' 
+of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Martin.1996':
+(biblatex)                - Entry 'Martin.1996' (ref.bib): Invalid format '14.1
+1.2021' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'martin.solid':
+(biblatex)                - Entry 'martin.solid' (ref.bib): Invalid format '14.
+11.2021' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'martin.srp':
+(biblatex)                - Entry 'martin.srp' (ref.bib): Invalid format '14.11
+.2021' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'layer.solid':
+(biblatex)                - Entry 'layer.solid' (ref.bib): Invalid format '14.1
+1.2021' of date field 'urldate' - ignoring.
+
+)
+Package biblatex Info: Reference section=0 on input line 25.
+Package biblatex Info: Reference segment=0 on input line 25.
+
+Underfull \hbox (badness 2426) in paragraph at lines 56--58
 []\OT1/ptm/b/it/9 Index Terms\OT1/ptm/b/n/9 ---Software, De-sign, He-xa-go-na-l
 e Ar-chi-tek-tur,
  []
 
+[1{C:/Users/simon/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+
+
+]
 
 Package svg Warning: Since the encountered filedate of file
 (svg)                `./svg-inkscape/VorSRP_svg-tex.pdf_tex' is newer than 
@@ -810,12 +845,12 @@ Package svg Warning: Since the encountered filedate of file
 (svg)                overwriting of this file, the Inkscape export
 (svg)                won't be done. If you want to overwrite the
 (svg)                existing file please choose the parameter
-(svg)                `inkscape=force' on input line 85.
+(svg)                `inkscape=force' on input line 95.
 
 Package svg Info: Last page of `./svg-inkscape/VorSRP_svg-tex.pdf' is 5 on inpu
-t line 85.
+t line 95.
 (svg-inkscape/VorSRP_svg-tex.pdf_tex
-<./svg-inkscape/VorSRP_svg-tex.pdf, id=5, page=1, 256.70906pt x 128.73094pt>
+<./svg-inkscape/VorSRP_svg-tex.pdf, id=13, page=1, 256.70906pt x 128.73094pt>
 File: ./svg-inkscape/VorSRP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorSRP_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/VorSRP_svg-tex.pdf , page1 used on inpu
@@ -833,37 +868,33 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./svg-inkscape/VorSRP_svg-tex.pdf, id=6, page=2, 256.70906pt x 128.73094pt>
+<./svg-inkscape/VorSRP_svg-tex.pdf, id=14, page=2, 256.70906pt x 128.73094pt>
 File: ./svg-inkscape/VorSRP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorSRP_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/VorSRP_svg-tex.pdf , page2 used on inpu
 t line 59.
 (pdftex.def)             Requested size: 250.0pt x 125.36777pt.
-<./svg-inkscape/VorSRP_svg-tex.pdf, id=7, page=3, 256.70906pt x 128.73094pt>
+<./svg-inkscape/VorSRP_svg-tex.pdf, id=15, page=3, 256.70906pt x 128.73094pt>
 File: ./svg-inkscape/VorSRP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorSRP_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/VorSRP_svg-tex.pdf , page3 used on inpu
 t line 62.
 (pdftex.def)             Requested size: 250.0pt x 125.36777pt.
-<./svg-inkscape/VorSRP_svg-tex.pdf, id=8, page=4, 256.70906pt x 128.73094pt>
+<./svg-inkscape/VorSRP_svg-tex.pdf, id=16, page=4, 256.70906pt x 128.73094pt>
 File: ./svg-inkscape/VorSRP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorSRP_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/VorSRP_svg-tex.pdf , page4 used on inpu
 t line 65.
 (pdftex.def)             Requested size: 250.0pt x 125.36777pt.
-<./svg-inkscape/VorSRP_svg-tex.pdf, id=9, page=5, 256.70906pt x 128.73094pt>
+<./svg-inkscape/VorSRP_svg-tex.pdf, id=17, page=5, 256.70906pt x 128.73094pt>
 File: ./svg-inkscape/VorSRP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorSRP_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/VorSRP_svg-tex.pdf , page5 used on inpu
 t line 67.
 (pdftex.def)             Requested size: 250.0pt x 125.36777pt.
 )
-[1{C:/Users/simon/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
-
-
-]
 Package svg Info: Last page of `./svg-inkscape/NachSRP_svg-tex.pdf' is 6 on inp
-ut line 95.
+ut line 105.
 
 (svg-inkscape/NachSRP_svg-tex.pdf_tex
 <./svg-inkscape/NachSRP_svg-tex.pdf, id=19, page=1, 252.19218pt x 121.20282pt>
@@ -904,7 +935,7 @@ ut line 70.
 (pdftex.def)             Requested size: 250.0pt x 120.15019pt.
 )
 Package svg Info: Last page of `./svg-inkscape/OCP_svg-tex.pdf' is 4 on input l
-ine 108.
+ine 118.
  (svg-inkscape/OCP_svg-tex.pdf_tex
 <./svg-inkscape/OCP_svg-tex.pdf, id=26, page=1, 258.21469pt x 125.71968pt>
 File: ./svg-inkscape/OCP_svg-tex.pdf Graphic file (type pdf)
@@ -931,125 +962,113 @@ Package pdftex.def Info: ./svg-inkscape/OCP_svg-tex.pdf , page4 used on input l
 ine 64.
 (pdftex.def)             Requested size: 250.0pt x 121.72348pt.
 )
-Package svg Info: Last page of `./svg-inkscape/VorLSP_svg-tex.pdf' is 3 on inpu
-t line 122.
+[2 <./svg-inkscape/VorSRP_svg-tex.pdf> <./svg-inkscape/VorSRP_svg-tex.pdf
 
-(svg-inkscape/VorLSP_svg-tex.pdf_tex
-<./svg-inkscape/VorLSP_svg-tex.pdf, id=31, page=1, 286.82156pt x 45.92157pt>
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorSRP_svg-tex.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/VorSRP_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorSRP_svg-tex.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/VorSRP_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorSRP_svg-tex.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/VorSRP_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorSRP_svg-tex.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/NachSRP_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/NachSRP_svg-tex.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/NachSRP_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/NachSRP_svg-tex.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/NachSRP_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/NachSRP_svg-tex.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/NachSRP_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/NachSRP_svg-tex.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/NachSRP_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/NachSRP_svg-tex.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/NachSRP_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/NachSRP_svg-tex.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/OCP_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/OCP_svg-tex.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./svg-inkscape/OCP_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/OCP_svg-tex.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./svg-inkscape/OCP_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/OCP_svg-tex.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./svg-inkscape/OCP_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/OCP_svg-tex.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>]
+Package svg Info: Last page of `./svg-inkscape/VorLSP_svg-tex.pdf' is 3 on inpu
+t line 132.
+ (svg-inkscape/VorLSP_svg-tex.pdf_tex
+<./svg-inkscape/VorLSP_svg-tex.pdf, id=39, page=1, 286.82156pt x 45.92157pt>
 File: ./svg-inkscape/VorLSP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorLSP_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/VorLSP_svg-tex.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 250.0pt x 40.0271pt.
-<./svg-inkscape/VorLSP_svg-tex.pdf, id=32, page=2, 286.82156pt x 45.92157pt>
+<./svg-inkscape/VorLSP_svg-tex.pdf, id=40, page=2, 286.82156pt x 45.92157pt>
 File: ./svg-inkscape/VorLSP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorLSP_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/VorLSP_svg-tex.pdf , page2 used on inpu
 t line 59.
 (pdftex.def)             Requested size: 250.0pt x 40.0271pt.
-<./svg-inkscape/VorLSP_svg-tex.pdf, id=33, page=3, 286.82156pt x 45.92157pt>
+<./svg-inkscape/VorLSP_svg-tex.pdf, id=41, page=3, 286.82156pt x 45.92157pt>
 File: ./svg-inkscape/VorLSP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorLSP_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/VorLSP_svg-tex.pdf , page3 used on inpu
 t line 62.
 (pdftex.def)             Requested size: 250.0pt x 40.0271pt.
-) [2 <./svg-inkscape/VorSRP_svg-tex.pdf> <./svg-inkscape/VorSRP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorSRP_svg-tex.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/VorSRP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorSRP_svg-tex.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/VorSRP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorSRP_svg-tex.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/VorSRP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorSRP_svg-tex.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/NachSRP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/NachSRP_svg-tex.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/NachSRP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/NachSRP_svg-tex.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/NachSRP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/NachSRP_svg-tex.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/NachSRP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/NachSRP_svg-tex.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/NachSRP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/NachSRP_svg-tex.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/NachSRP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/NachSRP_svg-tex.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/OCP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/OCP_svg-tex.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <./svg-inkscape/OCP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/OCP_svg-tex.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <./svg-inkscape/OCP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/OCP_svg-tex.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <./svg-inkscape/OCP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/OCP_svg-tex.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <./svg-inkscape/VorLSP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorLSP_svg-tex.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/VorLSP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorLSP_svg-tex.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/VorLSP_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorLSP_svg-tex.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
->]
+)
 Package svg Info: Last page of `./svg-inkscape/VorISP_svg-tex.pdf' is 5 on inpu
-t line 136.
+t line 145.
  (svg-inkscape/VorISP_svg-tex.pdf_tex
-<./svg-inkscape/VorISP_svg-tex.pdf, id=44, page=1, 286.82156pt x 149.47845pt>
+<./svg-inkscape/VorISP_svg-tex.pdf, id=43, page=1, 286.82156pt x 149.47845pt>
 File: ./svg-inkscape/VorISP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorISP_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/VorISP_svg-tex.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 250.0pt x 130.29152pt.
-<./svg-inkscape/VorISP_svg-tex.pdf, id=45, page=2, 286.82156pt x 149.47845pt>
+<./svg-inkscape/VorISP_svg-tex.pdf, id=44, page=2, 286.82156pt x 149.47845pt>
 File: ./svg-inkscape/VorISP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorISP_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/VorISP_svg-tex.pdf , page2 used on inpu
 t line 63.
 (pdftex.def)             Requested size: 250.0pt x 130.29152pt.
-<./svg-inkscape/VorISP_svg-tex.pdf, id=46, page=3, 286.82156pt x 149.47845pt>
+<./svg-inkscape/VorISP_svg-tex.pdf, id=45, page=3, 286.82156pt x 149.47845pt>
 File: ./svg-inkscape/VorISP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorISP_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/VorISP_svg-tex.pdf , page3 used on inpu
 t line 67.
 (pdftex.def)             Requested size: 250.0pt x 130.29152pt.
-<./svg-inkscape/VorISP_svg-tex.pdf, id=47, page=4, 286.82156pt x 149.47845pt>
+<./svg-inkscape/VorISP_svg-tex.pdf, id=46, page=4, 286.82156pt x 149.47845pt>
 File: ./svg-inkscape/VorISP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorISP_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/VorISP_svg-tex.pdf , page4 used on inpu
 t line 71.
 (pdftex.def)             Requested size: 250.0pt x 130.29152pt.
-<./svg-inkscape/VorISP_svg-tex.pdf, id=48, page=5, 286.82156pt x 149.47845pt>
+<./svg-inkscape/VorISP_svg-tex.pdf, id=47, page=5, 286.82156pt x 149.47845pt>
 File: ./svg-inkscape/VorISP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorISP_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/VorISP_svg-tex.pdf , page5 used on inpu
@@ -1057,39 +1076,40 @@ t line 73.
 (pdftex.def)             Requested size: 250.0pt x 130.29152pt.
 )
 Package svg Info: Last page of `./svg-inkscape/NachISP_svg-tex.pdf' is 6 on inp
-ut line 145.
- (svg-inkscape/NachISP_svg-tex.pdf_tex
-<./svg-inkscape/NachISP_svg-tex.pdf, id=50, page=1, 286.82156pt x 149.8097pt>
+ut line 154.
+
+(svg-inkscape/NachISP_svg-tex.pdf_tex
+<./svg-inkscape/NachISP_svg-tex.pdf, id=49, page=1, 286.82156pt x 149.8097pt>
 File: ./svg-inkscape/NachISP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/NachISP_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/NachISP_svg-tex.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 250.0pt x 130.58025pt.
-<./svg-inkscape/NachISP_svg-tex.pdf, id=51, page=2, 286.82156pt x 149.8097pt>
+<./svg-inkscape/NachISP_svg-tex.pdf, id=50, page=2, 286.82156pt x 149.8097pt>
 File: ./svg-inkscape/NachISP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/NachISP_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/NachISP_svg-tex.pdf , page2 used on inp
 ut line 61.
 (pdftex.def)             Requested size: 250.0pt x 130.58025pt.
-<./svg-inkscape/NachISP_svg-tex.pdf, id=52, page=3, 286.82156pt x 149.8097pt>
+<./svg-inkscape/NachISP_svg-tex.pdf, id=51, page=3, 286.82156pt x 149.8097pt>
 File: ./svg-inkscape/NachISP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/NachISP_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/NachISP_svg-tex.pdf , page3 used on inp
 ut line 65.
 (pdftex.def)             Requested size: 250.0pt x 130.58025pt.
-<./svg-inkscape/NachISP_svg-tex.pdf, id=53, page=4, 286.82156pt x 149.8097pt>
+<./svg-inkscape/NachISP_svg-tex.pdf, id=52, page=4, 286.82156pt x 149.8097pt>
 File: ./svg-inkscape/NachISP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/NachISP_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/NachISP_svg-tex.pdf , page4 used on inp
 ut line 69.
 (pdftex.def)             Requested size: 250.0pt x 130.58025pt.
-<./svg-inkscape/NachISP_svg-tex.pdf, id=54, page=5, 286.82156pt x 149.8097pt>
+<./svg-inkscape/NachISP_svg-tex.pdf, id=53, page=5, 286.82156pt x 149.8097pt>
 File: ./svg-inkscape/NachISP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/NachISP_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/NachISP_svg-tex.pdf , page5 used on inp
 ut line 71.
 (pdftex.def)             Requested size: 250.0pt x 130.58025pt.
-<./svg-inkscape/NachISP_svg-tex.pdf, id=55, page=6, 286.82156pt x 149.8097pt>
+<./svg-inkscape/NachISP_svg-tex.pdf, id=54, page=6, 286.82156pt x 149.8097pt>
 File: ./svg-inkscape/NachISP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/NachISP_svg-tex.pdf, page 6>
 Package pdftex.def Info: ./svg-inkscape/NachISP_svg-tex.pdf , page6 used on inp
@@ -1097,103 +1117,52 @@ ut line 73.
 (pdftex.def)             Requested size: 250.0pt x 130.58025pt.
 )
 Package svg Info: Last page of `./svg-inkscape/VorDIP_svg-tex.pdf' is 5 on inpu
-t line 156.
-(svg-inkscape/VorDIP_svg-tex.pdf_tex
-<./svg-inkscape/VorDIP_svg-tex.pdf, id=57, page=1, 271.76532pt x 166.37157pt>
+t line 165.
+ (svg-inkscape/VorDIP_svg-tex.pdf_tex
+<./svg-inkscape/VorDIP_svg-tex.pdf, id=56, page=1, 271.76532pt x 166.37157pt>
 File: ./svg-inkscape/VorDIP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorDIP_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/VorDIP_svg-tex.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 250.0pt x 153.05353pt.
-<./svg-inkscape/VorDIP_svg-tex.pdf, id=58, page=2, 271.76532pt x 166.37157pt>
+<./svg-inkscape/VorDIP_svg-tex.pdf, id=57, page=2, 271.76532pt x 166.37157pt>
 File: ./svg-inkscape/VorDIP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorDIP_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/VorDIP_svg-tex.pdf , page2 used on inpu
 t line 60.
 (pdftex.def)             Requested size: 250.0pt x 153.05353pt.
-<./svg-inkscape/VorDIP_svg-tex.pdf, id=59, page=3, 271.76532pt x 166.37157pt>
+<./svg-inkscape/VorDIP_svg-tex.pdf, id=58, page=3, 271.76532pt x 166.37157pt>
 File: ./svg-inkscape/VorDIP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorDIP_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/VorDIP_svg-tex.pdf , page3 used on inpu
 t line 64.
 (pdftex.def)             Requested size: 250.0pt x 153.05353pt.
-<./svg-inkscape/VorDIP_svg-tex.pdf, id=60, page=4, 271.76532pt x 166.37157pt>
+<./svg-inkscape/VorDIP_svg-tex.pdf, id=59, page=4, 271.76532pt x 166.37157pt>
 File: ./svg-inkscape/VorDIP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorDIP_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/VorDIP_svg-tex.pdf , page4 used on inpu
 t line 66.
 (pdftex.def)             Requested size: 250.0pt x 153.05353pt.
-<./svg-inkscape/VorDIP_svg-tex.pdf, id=61, page=5, 271.76532pt x 166.37157pt>
+<./svg-inkscape/VorDIP_svg-tex.pdf, id=60, page=5, 271.76532pt x 166.37157pt>
 File: ./svg-inkscape/VorDIP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VorDIP_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/VorDIP_svg-tex.pdf , page5 used on inpu
 t line 68.
 (pdftex.def)             Requested size: 250.0pt x 153.05353pt.
 )
-Package svg Info: Last page of `./svg-inkscape/NachDIP_svg-tex.pdf' is 8 on inp
-ut line 165.
- (svg-inkscape/NachDIP_svg-tex.pdf_tex
-<./svg-inkscape/NachDIP_svg-tex.pdf, id=63, page=1, 271.76532pt x 249.18094pt>
-File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page1 used on inp
-ut line 56.
-(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
-<./svg-inkscape/NachDIP_svg-tex.pdf, id=64, page=2, 271.76532pt x 249.18094pt>
-File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 2>
-Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page2 used on inp
-ut line 60.
-(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
-<./svg-inkscape/NachDIP_svg-tex.pdf, id=65, page=3, 271.76532pt x 249.18094pt>
-File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 3>
-Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page3 used on inp
-ut line 64.
-(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
-<./svg-inkscape/NachDIP_svg-tex.pdf, id=66, page=4, 271.76532pt x 249.18094pt>
-File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 4>
-Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page4 used on inp
-ut line 66.
-(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
-<./svg-inkscape/NachDIP_svg-tex.pdf, id=67, page=5, 271.76532pt x 249.18094pt>
-File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 5>
-Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page5 used on inp
-ut line 70.
-(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
-<./svg-inkscape/NachDIP_svg-tex.pdf, id=68, page=6, 271.76532pt x 249.18094pt>
-File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 6>
-Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page6 used on inp
-ut line 75.
-(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
-<./svg-inkscape/NachDIP_svg-tex.pdf, id=69, page=7, 271.76532pt x 249.18094pt>
-File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 7>
-Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page7 used on inp
-ut line 80.
-(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
-<./svg-inkscape/NachDIP_svg-tex.pdf, id=70, page=8, 271.76532pt x 249.18094pt>
-File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 8>
-Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page8 used on inp
-ut line 82.
-(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
- \OT1/ptm/m/it/10 3) Ho-he Koh[]asion: [][] \OT1/ptm/m/n/10 Ver-gleich-bar mit 
-dem \OT1/ptm/m/it/10 Single-
- []
+[3 <./svg-inkscape/VorLSP_svg-tex.pdf> <./svg-inkscape/VorLSP_svg-tex.pdf
 
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorLSP_svg-tex.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/VorLSP_svg-tex.pdf
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
-\OT1/ptm/m/it/10 Responsibility-Prinzip \OT1/ptm/m/n/10 soll-ten Mo-du-le eng m
-it ih-rer
- []
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorLSP_svg-tex.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/VorISP_svg-tex.pdf
 
-[3 <./svg-inkscape/VorISP_svg-tex.pdf> <./svg-inkscape/VorISP_svg-tex.pdf
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorISP_svg-tex.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/VorISP_svg-tex.pdf
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorISP_svg-tex.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
@@ -1254,9 +1223,72 @@ usion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/VorDIP_svg-tex.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
 >]
+Package svg Info: Last page of `./svg-inkscape/NachDIP_svg-tex.pdf' is 8 on inp
+ut line 174.
+ (svg-inkscape/NachDIP_svg-tex.pdf_tex
+<./svg-inkscape/NachDIP_svg-tex.pdf, id=70, page=1, 271.76532pt x 249.18094pt>
+File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page1 used on inp
+ut line 56.
+(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
+<./svg-inkscape/NachDIP_svg-tex.pdf, id=71, page=2, 271.76532pt x 249.18094pt>
+File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 2>
+Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page2 used on inp
+ut line 60.
+(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
+<./svg-inkscape/NachDIP_svg-tex.pdf, id=72, page=3, 271.76532pt x 249.18094pt>
+File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 3>
+Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page3 used on inp
+ut line 64.
+(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
+<./svg-inkscape/NachDIP_svg-tex.pdf, id=73, page=4, 271.76532pt x 249.18094pt>
+File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 4>
+Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page4 used on inp
+ut line 66.
+(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
+<./svg-inkscape/NachDIP_svg-tex.pdf, id=74, page=5, 271.76532pt x 249.18094pt>
+File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 5>
+Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page5 used on inp
+ut line 70.
+(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
+<./svg-inkscape/NachDIP_svg-tex.pdf, id=75, page=6, 271.76532pt x 249.18094pt>
+File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 6>
+Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page6 used on inp
+ut line 75.
+(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
+<./svg-inkscape/NachDIP_svg-tex.pdf, id=76, page=7, 271.76532pt x 249.18094pt>
+File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 7>
+Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page7 used on inp
+ut line 80.
+(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
+<./svg-inkscape/NachDIP_svg-tex.pdf, id=77, page=8, 271.76532pt x 249.18094pt>
+File: ./svg-inkscape/NachDIP_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/NachDIP_svg-tex.pdf, page 8>
+Package pdftex.def Info: ./svg-inkscape/NachDIP_svg-tex.pdf , page8 used on inp
+ut line 82.
+(pdftex.def)             Requested size: 250.0pt x 229.23402pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+ \OT1/ptm/m/it/10 3) Ho-he Koh[]asion: [][] \OT1/ptm/m/n/10 Ver-gleich-bar mit 
+dem \OT1/ptm/m/it/10 Single-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+\OT1/ptm/m/it/10 Responsibility-Prinzip \OT1/ptm/m/n/10 soll-ten Mo-du-le eng m
+it ih-rer
+ []
+
 Package svg Info: Last page of `./svg-inkscape/Schichtenarchitektur_svg-tex.pdf
-' is 6 on input line 194.
- (svg-inkscape/Schichtenarchitektur_svg-tex.pdf_tex
+' is 6 on input line 208.
+(svg-inkscape/Schichtenarchitektur_svg-tex.pdf_tex
 <./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=79, page=1, 368.87813pt x 
 266.50049pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
@@ -1352,12 +1384,12 @@ pdf): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Schichtenarchitektur_svg-tex.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 1838) in paragraph at lines 216--217
+Underfull \hbox (badness 1838) in paragraph at lines 228--229
 []\OT1/ptm/m/n/10 Eigenschaften wie Wart-bar-keit und Wie-der-ver-wend-bar-
  []
 
 Package svg Info: Last page of `./svg-inkscape/HexagonaleArchitektur_svg-tex.pd
-f' is 9 on input line 237.
+f' is 9 on input line 247.
 (svg-inkscape/HexagonaleArchitektur_svg-tex.pdf_tex
 <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=92, page=1, 667.54344pt x
  690.32906pt>
@@ -1422,51 +1454,6 @@ File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e9 used on input line 75.
 (pdftex.def)             Requested size: 250.0pt x 258.53569pt.
-)
-Package svg Info: Last page of `./svg-inkscape/HexagonaleInSchichtenarchitektur
-_svg-tex.pdf' is 5 on input line 250.
-
-(svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf_tex
-<./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, id=102, page=1, 3
-48.06593pt x 249.18094pt>
-File: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf Graphic file 
-(type pdf)
-<use ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-te
-x.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 250.0pt x 178.97667pt.
-<./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, id=103, page=2, 3
-48.06593pt x 249.18094pt>
-File: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf Graphic file 
-(type pdf)
-<use ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, page 2>
-Package pdftex.def Info: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-te
-x.pdf , page2 used on input line 58.
-(pdftex.def)             Requested size: 250.0pt x 178.97667pt.
-<./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, id=104, page=3, 3
-48.06593pt x 249.18094pt>
-File: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf Graphic file 
-(type pdf)
-<use ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, page 3>
-Package pdftex.def Info: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-te
-x.pdf , page3 used on input line 60.
-(pdftex.def)             Requested size: 250.0pt x 178.97667pt.
-<./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, id=105, page=4, 3
-48.06593pt x 249.18094pt>
-File: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf Graphic file 
-(type pdf)
-<use ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, page 4>
-Package pdftex.def Info: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-te
-x.pdf , page4 used on input line 62.
-(pdftex.def)             Requested size: 250.0pt x 178.97667pt.
-<./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, id=106, page=5, 3
-48.06593pt x 249.18094pt>
-File: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf Graphic file 
-(type pdf)
-<use ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, page 5>
-Package pdftex.def Info: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-te
-x.pdf , page5 used on input line 66.
-(pdftex.def)             Requested size: 250.0pt x 178.97667pt.
 ) [5 <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf> <./svg-inkscape/Hexagon
 aleArchitektur_svg-tex.pdf
 
@@ -1500,40 +1487,56 @@ pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleInSchichtenarchitek
-tur_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
-> <./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleInSchichtenarchitek
-tur_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
-> <./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleInSchichtenarchitek
-tur_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
-> <./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleInSchichtenarchitek
-tur_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
-> <./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleInSchichtenarchitek
-tur_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
 >]
-Underfull \hbox (badness 3009) in paragraph at lines 274--275
-[]\OT1/ptm/m/n/10 Softwareprojekte ska-lie-ren meist eher auf Ba-sis von
- []
-
+Package svg Info: Last page of `./svg-inkscape/HexagonaleInSchichtenarchitektur
+_svg-tex.pdf' is 5 on input line 259.
+ (svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf_tex
+<./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, id=107, page=1, 3
+48.06593pt x 249.18094pt>
+File: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf Graphic file 
+(type pdf)
+<use ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-te
+x.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 250.0pt x 178.97667pt.
+<./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, id=108, page=2, 3
+48.06593pt x 249.18094pt>
+File: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf Graphic file 
+(type pdf)
+<use ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, page 2>
+Package pdftex.def Info: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-te
+x.pdf , page2 used on input line 58.
+(pdftex.def)             Requested size: 250.0pt x 178.97667pt.
+<./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, id=109, page=3, 3
+48.06593pt x 249.18094pt>
+File: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf Graphic file 
+(type pdf)
+<use ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, page 3>
+Package pdftex.def Info: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-te
+x.pdf , page3 used on input line 60.
+(pdftex.def)             Requested size: 250.0pt x 178.97667pt.
+<./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, id=110, page=4, 3
+48.06593pt x 249.18094pt>
+File: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf Graphic file 
+(type pdf)
+<use ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, page 4>
+Package pdftex.def Info: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-te
+x.pdf , page4 used on input line 62.
+(pdftex.def)             Requested size: 250.0pt x 178.97667pt.
+<./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, id=111, page=5, 3
+48.06593pt x 249.18094pt>
+File: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf Graphic file 
+(type pdf)
+<use ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf, page 5>
+Package pdftex.def Info: ./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-te
+x.pdf , page5 used on input line 66.
+(pdftex.def)             Requested size: 250.0pt x 178.97667pt.
+)
 Package svg Info: Last page of `./svg-inkscape/SchichtenarchitekturBewertung_sv
-g-tex.pdf' is 8 on input line 288.
+g-tex.pdf' is 8 on input line 292.
+
 (svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf_tex
-<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=114, page=1, 242.
+<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=113, page=1, 242.
 02922pt x 165.99516pt>
 File: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1541,7 +1544,7 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.p
 df , page1 used on input line 56.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=115, page=2, 242.
+<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=114, page=2, 242.
 02922pt x 165.99516pt>
 File: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1549,7 +1552,7 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.p
 df , page2 used on input line 58.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=116, page=3, 242.
+<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=115, page=3, 242.
 02922pt x 165.99516pt>
 File: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1557,7 +1560,7 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.p
 df , page3 used on input line 60.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=117, page=4, 242.
+<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=116, page=4, 242.
 02922pt x 165.99516pt>
 File: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1565,7 +1568,7 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.p
 df , page4 used on input line 62.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=118, page=5, 242.
+<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=117, page=5, 242.
 02922pt x 165.99516pt>
 File: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1573,7 +1576,7 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.p
 df , page5 used on input line 64.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=119, page=6, 242.
+<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=118, page=6, 242.
 02922pt x 165.99516pt>
 File: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1581,7 +1584,7 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.p
 df , page6 used on input line 66.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=120, page=7, 242.
+<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=119, page=7, 242.
 02922pt x 165.99516pt>
 File: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1589,7 +1592,7 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.p
 df , page7 used on input line 68.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=121, page=8, 242.
+<./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf, id=120, page=8, 242.
 02922pt x 165.99516pt>
 File: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf Graphic file (ty
 pe pdf)
@@ -1597,12 +1600,72 @@ pe pdf)
 Package pdftex.def Info: ./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.p
 df , page8 used on input line 70.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-)
-Package svg Info: Last page of `./svg-inkscape/HexagonaleArchitekturBewertung_s
-vg-tex.pdf' is 8 on input line 296.
+) [6 <./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf> <./svg-inksc
+ape/HexagonaleInSchichtenarchitektur_svg-tex.pdf
 
-(svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf_tex
-<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=123, page=1, 242
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleInSchichtenarchitek
+tur_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+> <./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleInSchichtenarchitek
+tur_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+> <./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleInSchichtenarchitek
+tur_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+> <./svg-inkscape/HexagonaleInSchichtenarchitektur_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleInSchichtenarchitek
+tur_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
+_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
+_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
+_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
+_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
+_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
+_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
+_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
+_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>]
+Package svg Info: Last page of `./svg-inkscape/HexagonaleArchitekturBewertung_s
+vg-tex.pdf' is 8 on input line 303.
+ (svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf_tex
+<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=128, page=1, 242
 .02922pt x 165.99516pt>
 File: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf Graphic file (t
 ype pdf)
@@ -1610,7 +1673,7 @@ ype pdf)
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.
 pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=124, page=2, 242
+<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=129, page=2, 242
 .02922pt x 165.99516pt>
 File: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf Graphic file (t
 ype pdf)
@@ -1618,7 +1681,7 @@ ype pdf)
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.
 pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=125, page=3, 242
+<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=130, page=3, 242
 .02922pt x 165.99516pt>
 File: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf Graphic file (t
 ype pdf)
@@ -1626,7 +1689,7 @@ ype pdf)
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.
 pdf , page3 used on input line 60.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=126, page=4, 242
+<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=131, page=4, 242
 .02922pt x 165.99516pt>
 File: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf Graphic file (t
 ype pdf)
@@ -1634,7 +1697,7 @@ ype pdf)
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.
 pdf , page4 used on input line 62.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=127, page=5, 242
+<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=132, page=5, 242
 .02922pt x 165.99516pt>
 File: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf Graphic file (t
 ype pdf)
@@ -1642,7 +1705,7 @@ ype pdf)
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.
 pdf , page5 used on input line 64.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=128, page=6, 242
+<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=133, page=6, 242
 .02922pt x 165.99516pt>
 File: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf Graphic file (t
 ype pdf)
@@ -1650,7 +1713,7 @@ ype pdf)
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.
 pdf , page6 used on input line 66.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=129, page=7, 242
+<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=134, page=7, 242
 .02922pt x 165.99516pt>
 File: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf Graphic file (t
 ype pdf)
@@ -1658,7 +1721,7 @@ ype pdf)
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.
 pdf , page7 used on input line 68.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=130, page=8, 242
+<./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf, id=135, page=8, 242
 .02922pt x 165.99516pt>
 File: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf Graphic file (t
 ype pdf)
@@ -1666,48 +1729,26 @@ ype pdf)
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.
 pdf , page8 used on input line 70.
 (pdftex.def)             Requested size: 250.0pt x 171.47083pt.
-) [6 <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf> <./svg-inkscape
-/SchichtenarchitekturBewertung_svg-tex.pdf
+)
+Underfull \hbox (badness 2495) in paragraph at lines 312--313
+[]\OT1/ptm/m/n/10 Einerseits er-leich-tert ei-ne He-xa-go-na-le Ar-chi-tek-tur 
+die
+ []
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
-_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
-> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
-_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
-> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
+Underfull \hbox (badness 4036) in paragraph at lines 317--317
+[]\OT1/ptm/m/n/10 Robert C. Mar-tin. \OT1/ptm/m/it/10 Clean ar-chi-tec-ture: A 
+crafts-
+ []
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
-_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
-> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
-_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
-> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
+Underfull \hbox (badness 2245) in paragraph at lines 317--317
+[]\OT1/ptm/m/n/10 Robert C. Mar-tin. \OT1/ptm/m/it/10 De-sign Prin-cip-les and 
+De-sign
+ []
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
-_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
-> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
-_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
-> <./svg-inkscape/SchichtenarchitekturBewertung_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SchichtenarchitekturBewertung
-_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
-> <./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitekturBewertun
-g_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a sing
-le page
-> <./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf
+[7 <./svg-inkscape/HexagonaleArchitekturBewertung_svg-tex.pdf> <./svg-inkscape/
+HexagonaleArchitekturBewertung_svg-tex.pdf
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitekturBewertun
 g_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a sing
@@ -1754,7 +1795,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7
+[8
 
 ] (main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1762,13 +1803,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15694 strings out of 478927
- 305602 string characters out of 2852535
- 1098347 words of memory out of 3000000
- 33237 multiletter control sequences out of 15000+600000
+ 15727 strings out of 478927
+ 306840 string characters out of 2852535
+ 1096926 words of memory out of 3000000
+ 33270 multiletter control sequences out of 15000+600000
  440919 words of font info for 98 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 94i,16n,94p,2231b,2241s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 94i,16n,94p,2107b,2241s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5
 .pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a
@@ -1776,9 +1817,9 @@ Here is how much of TeX's memory you used:
 a.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on main.pdf (7 pages, 156496 bytes).
+Output written on main.pdf (8 pages, 166519 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
+ 168 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  468 words of extra memory for PDF output out of 10000 (max. 10000000)
 

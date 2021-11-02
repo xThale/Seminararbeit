@@ -2347,7 +2347,30 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">ref.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="0" nocite="1">*</bcf:citekey>
+    <bcf:citekey order="1">Chen.2018</bcf:citekey>
+    <bcf:citekey order="2">Dragoni.2017</bcf:citekey>
+    <bcf:citekey order="3">martin.solid</bcf:citekey>
+    <bcf:citekey order="4">Martin.2018</bcf:citekey>
+    <bcf:citekey order="5">martin.srp</bcf:citekey>
+    <bcf:citekey order="6">Martin.2003</bcf:citekey>
+    <bcf:citekey order="7">Martin.2018</bcf:citekey>
+    <bcf:citekey order="8">Meyer.1993</bcf:citekey>
+    <bcf:citekey order="9">Martin.2018</bcf:citekey>
+    <bcf:citekey order="10">Leavens.2000</bcf:citekey>
+    <bcf:citekey order="11">Martin.2018</bcf:citekey>
+    <bcf:citekey order="12">Martin.2003</bcf:citekey>
+    <bcf:citekey order="13">Martin.2018</bcf:citekey>
+    <bcf:citekey order="14">Martin.1996</bcf:citekey>
+    <bcf:citekey order="15">Martin.2003</bcf:citekey>
+    <bcf:citekey order="16">Martin.2018</bcf:citekey>
+    <bcf:citekey order="17">Larman.2009</bcf:citekey>
+    <bcf:citekey order="18">Buschmann.2013</bcf:citekey>
+    <bcf:citekey order="19">layer.solid</bcf:citekey>
+    <bcf:citekey order="20">layer.solid</bcf:citekey>
+    <bcf:citekey order="21">hex</bcf:citekey>
+    <bcf:citekey order="22">Martin.2018</bcf:citekey>
+    <bcf:citekey order="23">Vernon.2015</bcf:citekey>
+    <bcf:citekey order="24">layer.solid</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
