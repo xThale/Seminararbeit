@@ -64,9 +64,9 @@
     \put(0,0){\includegraphics[width=\unitlength,page=5]{HexagonaleArchitekturBewertung_svg-tex.pdf}}%
     \put(0.00933126,0.23172628){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Testbarkeit\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{HexagonaleArchitekturBewertung_svg-tex.pdf}}%
-    \put(0.00933126,0.13530327){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Skalierbarkeit\end{tabular}}}}%
+    \put(0.00933126,0.13530327){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Erweiterbarkeit\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{HexagonaleArchitekturBewertung_svg-tex.pdf}}%
-    \put(0.00933126,0.03888025){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Einfachheit\end{tabular}}}}%
+    \put(0.00933126,0.03888025){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Lernaufwand\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{HexagonaleArchitekturBewertung_svg-tex.pdf}}%
   \end{picture}%
 \endgroup%

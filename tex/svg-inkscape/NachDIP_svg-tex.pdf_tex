@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{270.75bp}%
+    \setlength{\unitlength}{240.75bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,35 +50,35 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.91689751)%
+  \begin{picture}(1,1.03115265)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{NachDIP_svg-tex.pdf}}%
-    \put(0.22160665,0.86149584){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}BenutzerAPIService\end{tabular}}}}%
-    \put(0.0166205,0.77839335){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ speicherNutzer(nutzer)\end{tabular}}}}%
-    \put(0.0166205,0.69529086){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ sucheBenutzer(name)\end{tabular}}}}%
+    \put(0.21806854,0.96884735){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}UserController\end{tabular}}}}%
+    \put(0.01869159,0.87538941){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ saveUser(payload)\end{tabular}}}}%
+    \put(0.01869159,0.78193146){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ findUser(payload)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{NachDIP_svg-tex.pdf}}%
-    \put(0.77562327,0.52908587){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}BenutzerBusinessService\end{tabular}}}}%
-    \put(0.57063712,0.44598338){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ speicherNutzer(nutzer)\end{tabular}}}}%
-    \put(0.57063712,0.36288089){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ ladeNutzer(name)\end{tabular}}}}%
+    \put(0.7788162,0.59501558){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}UserService\end{tabular}}}}%
+    \put(0.57943925,0.50155763){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ saveUser(user)\end{tabular}}}}%
+    \put(0.57943925,0.40809969){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ findUser(parameter)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{NachDIP_svg-tex.pdf}}%
-    \put(0.49861496,0.83933518){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
+    \put(0.49844237,0.94392523){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{NachDIP_svg-tex.pdf}}%
-    \put(0.22160665,0.1966759){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}BenutzerDatenbankService\end{tabular}}}}%
-    \put(0.0166205,0.11357341){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ speicherNutzer(nutzer)\end{tabular}}}}%
-    \put(0.0166205,0.03047091){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ ladeNutzer(name)\end{tabular}}}}%
+    \put(0.21806854,0.2211838){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}UserRepository\end{tabular}}}}%
+    \put(0.01869159,0.12772586){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ saveUser(user)\end{tabular}}}}%
+    \put(0.01869159,0.03426791){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ findUser(filter)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{NachDIP_svg-tex.pdf}}%
-    \put(0.57063712,0.76177285){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ speicherNutzer(nutzer)\end{tabular}}}}%
-    \put(0.57063712,0.68975069){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ ladeNutzer(name)\end{tabular}}}}%
-    \put(0.77562327,0.83083103){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{BenutzerBusinessInterface}\end{tabular}}}}%
-    \put(0.77562327,0.87534626){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}«interface»\end{tabular}}}}%
+    \put(0.57943925,0.85669782){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ saveUser(user)\end{tabular}}}}%
+    \put(0.57943925,0.77570093){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ findUser(parameter)\end{tabular}}}}%
+    \put(0.7788162,0.93436137){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{IUserService}\end{tabular}}}}%
+    \put(0.7788162,0.98442368){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}«interface»\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{NachDIP_svg-tex.pdf}}%
-    \put(0.57063712,0.09695291){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ speicherNutzer(nutzer)\end{tabular}}}}%
-    \put(0.57063712,0.02493075){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ ladeNutzer(name)\end{tabular}}}}%
-    \put(0.77562327,0.17432131){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{BenutzerDatabaseInterface}\end{tabular}}}}%
-    \put(0.77562327,0.21052632){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}«interface»\end{tabular}}}}%
+    \put(0.57943925,0.10903427){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ saveUser(user)\end{tabular}}}}%
+    \put(0.57943925,0.02803738){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ findUser(filter)\end{tabular}}}}%
+    \put(0.7788162,0.19604359){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{IUserRepository}\end{tabular}}}}%
+    \put(0.7788162,0.23676012){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}«interface»\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{NachDIP_svg-tex.pdf}}%
-    \put(0.83102493,0.28254848){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
+    \put(0.8411215,0.32087227){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{NachDIP_svg-tex.pdf}}%
   \end{picture}%
 \endgroup%

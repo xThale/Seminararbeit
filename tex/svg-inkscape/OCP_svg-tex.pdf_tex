@@ -54,15 +54,15 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{OCP_svg-tex.pdf}}%
-    \put(0.27988338,0.31778426){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ prüfePasswort(passwort)\end{tabular}}}}%
+    \put(0.27988338,0.31778426){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+verifyPassword(password)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{OCP_svg-tex.pdf}}%
-    \put(0.23323615,0.11953353){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}BenutzerPasswortValidator\end{tabular}}}}%
-    \put(0.01749271,0.03206997){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ prüfePasswort(passwort)\end{tabular}}}}%
+    \put(0.23323615,0.11953353){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}UserPasswordValidator\end{tabular}}}}%
+    \put(0.01749271,0.03206997){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+verifyPassword(password)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{OCP_svg-tex.pdf}}%
-    \put(0.7638484,0.11953353){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}AdminPasswortValidator\end{tabular}}}}%
-    \put(0.54810496,0.03206997){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ prüfePasswort(passwort)\end{tabular}}}}%
+    \put(0.7638484,0.11953353){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}AdminPasswordValidator\end{tabular}}}}%
+    \put(0.54810496,0.03206997){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+verifyPassword(password)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{OCP_svg-tex.pdf}}%
-    \put(0.49562682,0.39358601){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{PasswortValidator}\end{tabular}}}}%
+    \put(0.49562682,0.39358601){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{IPasswordValidator}\end{tabular}}}}%
     \put(0.49562682,0.44023324){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}«interface»\end{tabular}}}}%
   \end{picture}%
 \endgroup%

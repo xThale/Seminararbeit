@@ -59,20 +59,23 @@
     \put(0.16644673,0.35820664){\color[rgb]{0,0,0}\rotatebox{-63}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tests\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{HexagonaleArchitektur_svg-tex.pdf}}%
     \put(0.62808001,0.06033385){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Kontrollfluss\end{tabular}}}}%
-    \put(0.89535334,0.06033385){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Abhängigkeit\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{HexagonaleArchitektur_svg-tex.pdf}}%
-    \put(0.11947126,0.06033385){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Adapter / Service\end{tabular}}}}%
+    \put(0.89535334,0.06033385){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Abhängigkeit\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{HexagonaleArchitektur_svg-tex.pdf}}%
-    \put(0.82618821,0.37363814){\color[rgb]{0,0,0}\rotatebox{63}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Externe Systeme\end{tabular}}}}}%
+    \put(0.11947126,0.06033385){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Adapter\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{HexagonaleArchitektur_svg-tex.pdf}}%
-    \put(0.49613494,0.54638789){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Applikationskern\end{tabular}}}}%
-    \put(0.49613494,0.49451206){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}mit Businesslogik\end{tabular}}}}%
+    \put(0.82618821,0.37363814){\color[rgb]{0,0,0}\rotatebox{63}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Externe Systeme\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{HexagonaleArchitektur_svg-tex.pdf}}%
-    \put(0.23224482,0.99071571){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Primäre Adapter}\end{tabular}}}}%
-    \put(0.78709073,0.99071571){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Sekundäre Adapter}\end{tabular}}}}%
+    \put(0.49613494,0.54638789){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Applikationskern\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{HexagonaleArchitektur_svg-tex.pdf}}%
-    \put(0.38561686,0.06146159){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Port / Interface\end{tabular}}}}%
+    \put(0.49613494,0.49451206){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}mit Businesslogik\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{HexagonaleArchitektur_svg-tex.pdf}}%
+    \put(0.23224482,0.99071571){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Primäre Adapter}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{HexagonaleArchitektur_svg-tex.pdf}}%
+    \put(0.78709073,0.99071571){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Sekundäre Adapter}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{HexagonaleArchitektur_svg-tex.pdf}}%
+    \put(0.38561686,0.06146159){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Port\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{HexagonaleArchitektur_svg-tex.pdf}}%
     \put(0.81729794,0.71932319){\color[rgb]{0,0,0}\rotatebox{-63}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Datenbank\end{tabular}}}}}%
   \end{picture}%
 \endgroup%

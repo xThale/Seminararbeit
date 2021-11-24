@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{285.75bp}%
+    \setlength{\unitlength}{270.75bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,27 +50,19 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.52115486)%
+  \begin{picture}(1,0.33518006)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{VorISP_svg-tex.pdf}}%
-    \put(0.59317585,0.31461942){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ speicherNutzer(nutzer)\end{tabular}}}}%
-    \put(0.59317585,0.22173228){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ ladeNutzer(name)\end{tabular}}}}%
-    \put(0.59317585,0.12884514){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ speicherAdmin(admin)\end{tabular}}}}%
-    \put(0.59317585,0.035958){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ ladeAdmin(name)\end{tabular}}}}%
-    \put(0.78740157,0.41944882){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{DatenbankService}\end{tabular}}}}%
-    \put(0.78740157,0.4607874){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}«interface»\end{tabular}}}}%
+    \put(0.65373961,0.13296399){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ findUser(filter)\end{tabular}}}}%
+    \put(0.65373961,0.07202216){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ saveUser(user)\end{tabular}}}}%
+    \put(0.65373961,0.0166205){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ deleteUser(id)\end{tabular}}}}%
+    \put(0.83102493,0.223518){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{IUserRepository}\end{tabular}}}}%
+    \put(0.83102493,0.26869806){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}«interface»\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{VorISP_svg-tex.pdf}}%
-    \put(0.20997375,0.46866142){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}BenutzerService\end{tabular}}}}%
-    \put(0.01574803,0.38992126){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ speicherNutzer(nutzer)\end{tabular}}}}%
-    \put(0.01574803,0.3111811){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ ladeBenutzer(name)\end{tabular}}}}%
+    \put(0.23545706,0.19113573){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}HousekeepingService\end{tabular}}}}%
+    \put(0.0166205,0.11911357){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ deleteOldUsers(lastLogin)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{VorISP_svg-tex.pdf}}%
-    \put(0.20997375,0.19044619){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}AdminService\end{tabular}}}}%
-    \put(0.01574803,0.11170604){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ speicherAdmin(admin)\end{tabular}}}}%
-    \put(0.01574803,0.03296588){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ ladeAdmin(name)\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=4]{VorISP_svg-tex.pdf}}%
-    \put(0.49868766,0.41616798){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=5]{VorISP_svg-tex.pdf}}%
-    \put(0.49868766,0.1432021){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
+    \put(0.54293629,0.19113573){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
   \end{picture}%
 \endgroup%

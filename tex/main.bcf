@@ -2370,7 +2370,6 @@
     <bcf:citekey order="21">hex</bcf:citekey>
     <bcf:citekey order="22">Martin.2018</bcf:citekey>
     <bcf:citekey order="23">Vernon.2015</bcf:citekey>
-    <bcf:citekey order="24">layer.solid</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

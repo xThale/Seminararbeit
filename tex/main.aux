@@ -36,7 +36,7 @@
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {II-A}1}Single-Responsibility-Prinzip (SRP)}{2}{}\protected@file@percent }
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Entgegen des \emph  {SRP} verwenden beide Accountklassen den gleichen Validator}}{2}{}\protected@file@percent }
 \newlabel{fig:VorSRP}{{1}{2}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Anwendung des Single-Responsibility-Prinzip zur Passwortvalidierung}}{2}{}\protected@file@percent }
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Anwendung des Single-Responsibility-Prinzip zur Überprüfung der Passwortrichtlinien}}{2}{}\protected@file@percent }
 \newlabel{fig:NachSRP}{{2}{2}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {II-A}2}Open-Closed-Prinzip (OCP)}{2}{}\protected@file@percent }
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Geschlossenes Interface und offener Implementierungen anhand des \emph  {OCP}}}{2}{}\protected@file@percent }
@@ -55,10 +55,10 @@
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Verletzung des Liskovsches Substitutionsprinzip durch die stärkeren Vorbedingungen in der Funktion der Adminklasse }}{3}{}\protected@file@percent }
 \newlabel{fig:VorLSP}{{4}{3}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {II-A}4}Interface-Segregation-Prinzip (ISP)}{3}{}\protected@file@percent }
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Abhängigkeit zwischen Klassen und einem großen Interface bricht das \emph  {ISP} }}{3}{}\protected@file@percent }
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Abhängigkeit zwischen Service und einem großen Interface bricht das \emph  {ISP} }}{3}{}\protected@file@percent }
 \newlabel{fig:VorISP}{{5}{3}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {II-A}5}Dependency-Inversion-Prinzip (DIP)}{3}{}\protected@file@percent }
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Geringere Kopplung der Service durch kleinere, spezifischere Schnittstellen}}{3}{}\protected@file@percent }
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Geringere Kopplung durch kleinere, spezifischere Schnittstellen}}{3}{}\protected@file@percent }
 \newlabel{fig:NachISP}{{6}{3}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Klassen auf verschiedenen konzeptionellen Ebenen sind entgegen des \emph  {DIP} direkt voneinander abhängig}}{3}{}\protected@file@percent }
 \newlabel{fig:VorDIP}{{7}{3}}
@@ -89,9 +89,9 @@
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {IV}Hexagonale Architektur}{5}{}\protected@file@percent }
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Beispielhafte Darstellung einer Hexagonalen Architektur}}{5}{}\protected@file@percent }
 \newlabel{fig:HexagonaleArchitektur}{{10}{5}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Architektonischer Vergleich mit einer Schichtenarchitektur}{5}{}\protected@file@percent }
 \abx@aux@cite{Vernon.2015}
 \abx@aux@segm{0}{0}{Vernon.2015}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Architektonischer Vergleich mit einer Schichtenarchitektur}{6}{}\protected@file@percent }
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Einteilung einer Hexagonalen Architektur in Schichten}}{6}{}\protected@file@percent }
 \newlabel{fig:HexagonaleInSchichtenarchitektur}{{11}{6}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}SOLID-Prinzipien in einer Hexagonaler Architektur}{6}{}\protected@file@percent }
@@ -100,9 +100,7 @@
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Bewertung der Schichtenarchitektur}{6}{}\protected@file@percent }
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Bewertung der architektonischen Eigenschaften einer Schichtenarchitektur}}{6}{}\protected@file@percent }
 \newlabel{ref:SchichtenarchitekturBewertung}{{12}{6}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Bewertung der Hexagonalen Architektur}{6}{}\protected@file@percent }
-\abx@aux@cite{layer.solid}
-\abx@aux@segm{0}{0}{layer.solid}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Bewertung der Hexagonalen Architektur}{7}{}\protected@file@percent }
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Bewertung der architektonischen Eigenschaften einer Hexagonalen Architektur}}{7}{}\protected@file@percent }
 \newlabel{fig:HexagonaleArchitekturBewertung}{{13}{7}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Vergleich der beiden Designstrategien}{7}{}\protected@file@percent }

@@ -54,20 +54,20 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{VorDIP_svg-tex.pdf}}%
-    \put(0.22160665,0.5567867){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}BenutzerAPIService\end{tabular}}}}%
-    \put(0.0166205,0.47368421){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ speicherNutzer(nutzer)\end{tabular}}}}%
-    \put(0.0166205,0.39058172){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ sucheBenutzer(name)\end{tabular}}}}%
+    \put(0.22160665,0.5567867){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}UserController\end{tabular}}}}%
+    \put(0.0166205,0.47368421){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ saveUser(payload)\end{tabular}}}}%
+    \put(0.0166205,0.39058172){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ findUser(payload)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{VorDIP_svg-tex.pdf}}%
-    \put(0.77562327,0.5567867){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}BenutzerBusinessService\end{tabular}}}}%
-    \put(0.57063712,0.47368421){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ speicherNutzer(nutzer)\end{tabular}}}}%
-    \put(0.57063712,0.39058172){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ ladeNutzer(name)\end{tabular}}}}%
+    \put(0.77562327,0.5567867){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}UserService\end{tabular}}}}%
+    \put(0.57063712,0.47368421){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ saveUser(user)\end{tabular}}}}%
+    \put(0.57063712,0.39058172){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ findUser(parameter)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{VorDIP_svg-tex.pdf}}%
-    \put(0.49861496,0.53462604){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
+    \put(0.49584488,0.52354571){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{VorDIP_svg-tex.pdf}}%
     \put(0.83102493,0.29916898){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{VorDIP_svg-tex.pdf}}%
-    \put(0.77562327,0.1966759){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}BenutzerDatenbankService\end{tabular}}}}%
-    \put(0.57063712,0.11357341){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ speicherNutzer(nutzer)\end{tabular}}}}%
-    \put(0.57063712,0.03047091){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ ladeNutzer(name)\end{tabular}}}}%
+    \put(0.77562327,0.1966759){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}UserRepository\end{tabular}}}}%
+    \put(0.57063712,0.11357341){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ saveUser(user)\end{tabular}}}}%
+    \put(0.57063712,0.03047091){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ findUser(filter)\end{tabular}}}}%
   \end{picture}%
 \endgroup%
