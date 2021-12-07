@@ -1,0 +1,12 @@
+@inproceedings{dragoni:hal-01636132,
+  TITLE = {{Microservices: How To Make Your Application Scale}},
+  AUTHOR = {Dragoni, Nicola and Lanese, Ivan and Larsen, Stephan Thordal and Mazzara, Manuel and Mustafin, Ruslan and Safina, Larisa},
+  URL = {https://hal.inria.fr/hal-01636132},
+  BOOKTITLE = {{A.P. Ershov Informatics Conference (the PSI Conference Series, 11th edition)}},
+  ADDRESS = {Moscow, Russia},
+  YEAR = {2017},
+  MONTH = Jun,
+  PDF = {https://hal.inria.fr/hal-01636132/file/microservices-make-application.pdf},
+  HAL_ID = {hal-01636132},
+  HAL_VERSION = {v1},
+}
