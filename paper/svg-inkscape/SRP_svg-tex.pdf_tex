@@ -1,0 +1,87 @@
+%% Creator: Inkscape 1.1.1 (3bf5ae0d25, 2021-09-20), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SRP_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{600.75bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.28714107)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SRP_svg-tex.pdf}}%
+    \put(0.11235955,0.23782772){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Benutzer\end{tabular}}}}%
+    \put(0.00749064,0.20037453){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ überprüfePasswort(passwort)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SRP_svg-tex.pdf}}%
+    \put(0.36204744,0.23782772){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Admin\end{tabular}}}}%
+    \put(0.25717853,0.20037453){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ überprüfePasswort(passwort)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SRP_svg-tex.pdf}}%
+    \put(0.2372035,0.07553059){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}PasswortValidierer\end{tabular}}}}%
+    \put(0.13233458,0.0380774){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ überprüfePasswort(passwort)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SRP_svg-tex.pdf}}%
+    \put(0.63670412,0.23782772){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Benutzer\end{tabular}}}}%
+    \put(0.53183521,0.20037453){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ überprüfePasswort(passwort)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SRP_svg-tex.pdf}}%
+    \put(0.88639201,0.23782772){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Admin\end{tabular}}}}%
+    \put(0.7815231,0.20037453){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ überprüfePasswort(passwort)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SRP_svg-tex.pdf}}%
+    \put(0.63670412,0.07553059){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}BenutzerPasswortValidierer\end{tabular}}}}%
+    \put(0.53183521,0.0380774){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ überprüfePasswort(passwort)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SRP_svg-tex.pdf}}%
+    \put(0.88639201,0.07553059){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}AdminPasswortValidierer\end{tabular}}}}%
+    \put(0.7815231,0.0380774){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ überprüfePasswort(passwort)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SRP_svg-tex.pdf}}%
+    \put(0.32709114,0.14044944){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SRP_svg-tex.pdf}}%
+    \put(0.14731586,0.14044944){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SRP_svg-tex.pdf}}%
+    \put(0.63670412,0.14044944){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{SRP_svg-tex.pdf}}%
+    \put(0.88639201,0.14044944){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Use\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{SRP_svg-tex.pdf}}%
+  \end{picture}%
+\endgroup%
